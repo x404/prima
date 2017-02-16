@@ -4,7 +4,7 @@ $(document).ready(function(){
 		autoScrolling : true,
 		fitToSection : false,
 		scrollBar : true,
-		normalScrollElements: '',
+		normalScrollElements: '#section7',
 		bigSectionsDestination : 'bottom'
 	});
 

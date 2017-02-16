@@ -421,26 +421,32 @@ footer a {
 ---------------------------*/
 /* =services
 ---------------------------*/
+.services .title,
+.building-list .title {
+  color: #fff;
+}
+
+.services .title:after,
+.building-list .title:after {
+  background-image: url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
+}
+
 .services {
   background: url(../images/bg-3.jpg) no-repeat center center/cover;
   color: #fff;
 }
 
 .services a {
-  color: #fff;
   font-size: 22px;
   font-size: 2.2rem;
-  text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  color: #fff;
+  text-decoration: none;
 }
 
 .services a:hover {
   color: #ef4129;
-}
-
-.services .title:after {
-  background-image: url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
 }
 
 .services ul {
@@ -552,14 +558,17 @@ figure.effect-bubba:hover p {
 
 /* =project-list
 ---------------------------*/
+.building-list,
 .project-list {
   background: url(../images/bg-4.jpg) no-repeat center center/cover;
 }
 
+.building-list .cell,
 .project-list .cell {
   text-transform: uppercase;
 }
 
+.building-list .flexbox,
 .project-list .flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -574,6 +583,7 @@ figure.effect-bubba:hover p {
   flex-wrap: wrap;
 }
 
+.building-list .flexbox .cell,
 .project-list .flexbox .cell {
   height: 360px;
   margin-top: 2.5rem;
@@ -586,6 +596,7 @@ figure.effect-bubba:hover p {
   display: flex;
 }
 
+.building-list .flexbox .cell a,
 .project-list .flexbox .cell a {
   font-size: 24px;
   font-size: 2.4rem;
@@ -596,12 +607,14 @@ figure.effect-bubba:hover p {
   text-transform: uppercase;
 }
 
+.building-list .flexbox .cell img,
 .project-list .flexbox .cell img {
   max-width: 100;
   margin-top: -39px;
   vertical-align: top;
 }
 
+.building-list figure,
 .project-list figure {
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -616,7 +629,9 @@ figure.effect-bubba:hover p {
   width: 100%;
 }
 
-.project-list figure figcaption, .project-list figure figcaption > a {
+.building-list figure figcaption, .building-list figure figcaption > a,
+.project-list figure figcaption,
+.project-list figure figcaption > a {
   height: 100%;
   left: 0;
   position: absolute;
@@ -624,6 +639,7 @@ figure.effect-bubba:hover p {
   width: 100%;
 }
 
+.building-list figure figcaption,
 .project-list figure figcaption {
   backface-visibility: hidden;
   color: #fff;
@@ -632,6 +648,14 @@ figure.effect-bubba:hover p {
 }
 
 /* =/project-list
+---------------------------*/
+/* =building-list
+---------------------------*/
+.building-list {
+  background: url(../images/bg-5.jpg) no-repeat center center/cover;
+}
+
+/* =/building-list
 ---------------------------*/
 /* =contacts
 ---------------------------*/

@@ -91,23 +91,30 @@
 
 /* =services
 ---------------------------*/
+.services,
+.building-list{
+	.title{
+		color: $color2;
+		&:after{
+			background-image:url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
+		}
+	}	
+}
+
+
 .services{
 	background: url(../images/bg-3.jpg) no-repeat center center / cover;
 	color: $color2;
 	a{
-		color: $color2;
 		@include font-size(2.2);
-		text-decoration: none;
 		@include transition;
+		color: $color2;
+		text-decoration: none;
 		&:hover{
 			color: $color3;
 		}
 	}
-	.title{
-		&:after{
-			background-image:url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
-		}
-	}
+
 
 	ul{
 		background: url(../images/services-bg.png) no-repeat center top;
@@ -218,6 +225,7 @@ figure.effect-bubba:hover p {
 
 /* =project-list
 ---------------------------*/
+.building-list,
 .project-list{
 	background: url(../images/bg-4.jpg) no-repeat center center / cover;
 	.cell{
@@ -255,9 +263,7 @@ figure.effect-bubba:hover p {
 		background: #3085a3 none repeat scroll 0 0;
 		cursor: pointer;
 		display: block;
-		// float: left;
 		max-height: 360px;
-		// max-width: 480px;
 		min-width: 320px;
 		overflow: hidden;
 		position: relative;
@@ -279,11 +285,20 @@ figure.effect-bubba:hover p {
 		padding: 1.8rem;
 		text-transform: uppercase;
 	}
-
 }
 /* =/project-list
 ---------------------------*/
 
+
+.fp-completely{
+}
+/* =building-list
+---------------------------*/
+.building-list{
+	background: url(../images/bg-5.jpg) no-repeat center center / cover;
+}
+/* =/building-list
+---------------------------*/
 
 /* =contacts
 ---------------------------*/
