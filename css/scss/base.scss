@@ -1,0 +1,229 @@
+@import url('elements.scss');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
+
+/*** reset ***********/
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+header, section, footer, aside, nav, article {display:block}
+ul{list-style:none}
+$color1:#000;
+$color2:#fff;
+$color3:#ef4129;
+$color4:#30445d;
+
+
+
+$color5:#666;
+$color6:#ff5722;
+$color7:#80bbde;
+$color8:#292929;
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body{
+	display: flex;
+	display: -webkit-flex;
+	font-display: swap;
+	flex-flow: column;
+	height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+	@include font-size(1.8);
+}
+
+html, body{
+	height: 100%
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	//ie11
+}
+
+
+
+*:focus{outline:none}
+
+input::-moz-focus-inner{
+	border: 0;
+	padding: 0;
+}
+
+
+
+/*** standart classes *****/
+p{}
+a{color:#020000}
+h1{font-size:2.5rem}
+h2{font-size:2.4rem}
+h3{font-size:1.6rem}
+
+
+*:focus{outline:none}
+
+input::-moz-focus-inner{
+	border: 0;
+	padding: 0;
+}
+
+.tdn{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.tdu{
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+
+@mixin sprite($x:0, $y:0){
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: $x $y;
+}
+
+.before{
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+
+.form-control {
+   border: 1px solid $color3;
+   border-radius: 0;
+   margin-top: 0.6rem;
+	font-size: 16px;
+	&:focus,
+	&:active{
+		border-color: $color5;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+.title{
+	@include font-size(3.6);
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 7.5rem;
+	position: relative;
+	&:after{
+		@extend .before;
+		position: static;
+		margin: 10px auto;
+		height: 2px;
+		width: 100px;
+		top: 0;
+		left: 0;
+		background:url("data:image/gif;base64, R0lGODlhZAACAIAAAO9BKTBEXSH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=") no-repeat center center;
+	}
+
+}
+
+
+/* =header
+---------------------------*/
+.header{
+	padding: 2rem 0;
+	.container{
+		@include flexbox;
+		nav{
+			flex-grow: 1;
+			ul{
+				@include flexbox;
+				@include justify-content(space-between)
+			}
+		}
+	}
+
+	nav{
+		@include font-size(1.4);
+		margin-left: 10.6rem;
+		margin-right: 15.3rem;
+		text-transform: uppercase;
+		padding-top: 4.6rem;
+		a{
+			text-decoration: none;
+			&:hover{
+				color: $color3;
+			}
+		}
+	}
+}
+/* =/header
+---------------------------*/
+
+
+.login{
+	padding-top: 3.5rem;
+	&-btn{
+		background: none;
+		@include sprite(0, 0);
+		border: none;
+		cursor: pointer;
+		height: 20px;
+		width: 25px;
+	}
+}
+
+
+/* =navigation
+---------------------------*/
+/* =/navigation
+---------------------------*/
+
+
+
+/* =main
+---------------------------*/
+.main{
+	aside{
+	}
+}
+
+
+/* =footer
+---------------------------*/
+footer{
+	@include font-size(1.4);
+	color: $color4;
+	margin-top: 3.3rem;
+	text-align: center;
+	.container{
+		border-top: 1px solid $color4;		
+		padding: 4rem 0 6rem;
+	}
+	a{
+		@extend .tdn;
+		color: $color4;
+	}
+}
+/* =footer
+---------------------------*/

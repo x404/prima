@@ -1,0 +1,1625 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tran",
+				"translateX"
+			],
+			[
+				"erro",
+				"errorTxt"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"Емкост",
+				"Емкость"
+			],
+			[
+				"proj",
+				"project-1-sm"
+			],
+			[
+				"colo",
+				"color3"
+			],
+			[
+				"colr",
+				"color3"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"ovh",
+				"ov:h\toverflow:hidden"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"scro",
+				"scrollTo"
+			],
+			[
+				"o-",
+				"o-entry"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"fa",
+				"fadeIn"
+			],
+			[
+				"fad",
+				"fadeOut"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"pare",
+				"parent"
+			],
+			[
+				"table",
+				"table-layout"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"reivew",
+				"reviews_wrapper"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"arti",
+				"articles"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"spre",
+				"speedfromsm"
+			],
+			[
+				"valu",
+				"values"
+			],
+			[
+				"max",
+				"maxslider"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"ch",
+				"checkbox"
+			],
+			[
+				"remove",
+				"remove"
+			],
+			[
+				"win",
+				"win_height"
+			],
+			[
+				"togg",
+				"slideToggle"
+			],
+			[
+				"3rem",
+				"3rem"
+			],
+			[
+				"add",
+				"add-service1"
+			],
+			[
+				"t",
+				"title\tAttr"
+			],
+			[
+				"slide",
+				"slideToggle"
+			],
+			[
+				"bt",
+				"btn-rounded"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"chec",
+				"checkbox"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"filt",
+				"filter-sm"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"pro",
+				"problem"
+			],
+			[
+				"check",
+				"check"
+			],
+			[
+				"item",
+				"item_field_radio"
+			],
+			[
+				"speed",
+				"speed-1"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"respo",
+				"responseText"
+			],
+			[
+				"remvo",
+				"removeClass"
+			],
+			[
+				"slid",
+				"slideDown"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"cur",
+				"curHeight"
+			],
+			[
+				"faq",
+				"faq"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tar",
+				"tarif_item"
+			],
+			[
+				"clos",
+				"closest"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"1rem",
+				"1rem"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"prov",
+				"providers"
+			],
+			[
+				"compa",
+				"compare"
+			],
+			[
+				"conn",
+				"connect-form"
+			],
+			[
+				"is",
+				"isChecked"
+			],
+			[
+				"othe",
+				"others_item"
+			],
+			[
+				"btn",
+				"btn-type-2"
+			],
+			[
+				"gra",
+				"grade-good"
+			],
+			[
+				"reive",
+				"reviews_item"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"rai",
+				"radio1"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"to",
+				"to-review"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"MYRIA",
+				"MyriadProRegular"
+			],
+			[
+				"ul",
+				"url()"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"s",
+				"src"
+			],
+			[
+				"pa",
+				"panel"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"rbg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"15px",
+				"15px"
+			],
+			[
+				"expa",
+				"expand-current"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"url",
+				"urlimg"
+			],
+			[
+				"exp",
+				"expand-current"
+			],
+			[
+				"remov",
+				"removeClass"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"border-s",
+				"border-spacing"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"list-s",
+				"list-style-position"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"rgb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"a",
+				"autocomplete\tAttr"
+			],
+			[
+				"rb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"star",
+				"starttimesel2"
+			],
+			[
+				"im",
+				"important\t!important"
+			],
+			[
+				"froma",
+				"from_aero"
+			],
+			[
+				"ae",
+				"aero3"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE HTML>\n<html lang=\"ru\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<meta name=\"keywords\" content=\"\" />\n<meta name=\"description\" content=\"\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\"/>\n<link rel=\"shortcut icon\" href=\"/favicon.ico\" type=\"image/x-icon\"/>\n\n<meta name=\"robots\" content=\"noindex,nofollow\" />\n\n<title>Главная</title>\n<!-- <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\" /> -->\n<!-- <link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css\"> -->\n<link rel=\"stylesheet\" href=\"css/styles.css\" />\n\n<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"/js/jquery-1.12.4.min.js\"><\\/script>')</script>\n\n\n<!--[if IE]>\n\t<link href=\"css/styles-ie.css\" rel=\"stylesheet\" type=\"text/css\" />\n<![endif]-->\n\n<!--[if lt IE 9]>\n\t<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n<![endif]-->\n\n<!--[if (gte IE 5.5)&(lte IE 8)]>\n\t<script type=\"text/javascript\" src=\"js/selectivizr.js\"></script>\n<![endif]-->\n\n</head>\n<body>\n\n<!-- =header -->\n<header class=\"header\">\n\t<div class=\"container\">\n\t\t<div class=\"logo\">\n\t\t\t<a href=\"/\" title=\"\"><img src=\"images/logo.png\" alt=\"Проектно-строительная компания Prima\" /></a>\n\t\t</div>\n\t\t<nav>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"#\" title=\"\">О компании</a></li>\n\t\t\t\t<li><a href=\"#\" title=\"\">Услуги</a></li>\n\t\t\t\t<li><a href=\"#\" title=\"\">Проектирование</a></li>\n\t\t\t\t<li><a href=\"#\" title=\"\">Строительство</a></li>\n\t\t\t\t<li><a href=\"#\" title=\"\">Статьи</a></li>\n\t\t\t\t<li><a href=\"#\" title=\"\">Контакты</a></li>\n\t\t\t</ul>\n\t\t</nav>\n\t\t<div class=\"login\">\n\t\t\t<button type=\"button\" class=\"login-btn\"></button>\n\t\t</div>\n\t</div>\n</header>\n<!-- =/header -->\n\n<!-- =intro -->\n<section class=\"intro\">\n\t<div class=\"container\">\n\t\t<div class=\"text\">\n\t\t\t<p>PRIMA – это проектно-строительная компания, специализирующаяся на проектировании и строительстве жилых домов и коттеджей в Днепропетровской области.</p>\n\t\t\t<div class=\"buttons\">\n\t\t\t\t<a href=\"#\" class=\"btn\">Строительство</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n<!-- =/intro -->\n\n\n<!-- =about -->\n<section class=\"about\">\n\t<div class=\"container\"></div>\n</section>\n<!-- =/about -->\n\n\n<!-- =services -->\n<section class=\"services\">\n\t<div class=\"container\"></div>\n</section>\n<!-- =/services -->\n\n\n<!-- =project-list -->\n<section class=\"project-list\">\n\t<div class=\"container\"></div>\n</section>\n<!-- =/project-list -->\n\n\n<footer>\n\t<div class=\"wrapper\">\n\t\tА тут у меня — ноги приделаны.\n\t</div>\n</footer>\n\n\n<div id=\"outdated\"></div>\n<link rel=\"stylesheet\" property=\"stylesheet\" href=\"outdatedbrowser/outdatedbrowser.min.css\" />\n<script src=\"outdatedbrowser/outdatedbrowser.min.js\"></script>\n\n<script src=\"http://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/jquery.validate.min.js\"><\\/script>')</script>\n<script src=\"js/engine.js\"></script>\n</body>\n</html>\n",
+			"file": "homepage.html",
+			"file_size": 3565,
+			"file_write_time": 131317144937977719,
+			"settings":
+			{
+				"buffer_size": 3139,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/scss/base.scss",
+			"settings":
+			{
+				"buffer_size": 2820,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/scss/flex.scss",
+			"settings":
+			{
+				"buffer_size": 11763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/scss/grid.scss",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/styles.scss",
+			"settings":
+			{
+				"buffer_size": 243,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: html",
+				"Snippet: html"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disba",
+				"Package Control: Disable Package"
+			],
+			[
+				"disaba",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"packe",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pcka",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/W/domains/prima.local/subdomain",
+		"/W/domains/prima.local/subdomain/css",
+		"/W/domains/prima.local/subdomain/css/scss"
+	],
+	"file_history":
+	[
+		"/W/domains/aquahim.local/homepage.html",
+		"/W/domains/prima.local/subdomain/css/styles.scss",
+		"/W/domains/acidwear.local/psystore/css/styles.less",
+		"/W/domains/aquahim.local/css/styles.css",
+		"/W/domains/aquahim.local/data.php",
+		"/W/domains/aquahim.local/css/scss/base.scss",
+		"/W/domains/aquahim.local/css/scss/responsive-base.scss",
+		"/W/domains/aquahim.local/order.ajax.php",
+		"/W/domains/aquahim.local/css/styles.scss",
+		"/W/domains/aquahim.local/css/scss/browsers.scss",
+		"/W/domains/aquahim.local/css/styles-ie.css",
+		"/W/domains/aquahim.local/js/engine.js",
+		"/W/domains/aquahim.local/css/owl.carousel.css",
+		"/W/domains/provaiders.local/js/engine.js",
+		"/W/domains/lionskit.local/contacts.html",
+		"/W/domains/aquahim.local/css/scss/grid.scss",
+		"/W/domains/aquahim.local/css/highslide.css",
+		"/W/domains/gfb.local/www/js/engine.js",
+		"/W/domains/lionskit.local/js/engine.js",
+		"/W/domains/jooliki.local/js/engine.js",
+		"/O/Download/bootstrap/css/bootstrap.css",
+		"/W/domains/aquahim.local/css/scss/elements.scss",
+		"/W/domains/aquahim.local/css/scss/flex.scss",
+		"/W/domains/aquahim.local/css/bootstrap.css",
+		"/O/Download/proverst_db(2).sql",
+		"/W/domains/proverstka.local/wp-content/themes/satoshi/style.less",
+		"/D/openserver/userdata/temp/scp08110/tablitsa-razmerov/index.php",
+		"/D/openserver/userdata/temp/scp22726/local/templates/main/components/bitrix/catalog.element/item_popup/template.php",
+		"/D/openserver/userdata/temp/scp50861/local/templates/main/footer.php",
+		"/D/openserver/userdata/temp/scp17004/local/templates/main/components/bitrix/catalog.element/item/template.php",
+		"/D/openserver/userdata/temp/scp10141/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp07535/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp30592/local/templates/main/components/bitrix/news.detail/brand/template.php",
+		"/D/openserver/userdata/temp/scp08136/bitrix/components/bitrix/sale.personal.order.detail/templates/.default/style.css",
+		"/D/openserver/userdata/temp/scp52638/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp51867/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp44258/local/templates/main/header.php",
+		"/D/openserver/userdata/temp/scp08547/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp19831/local/templates/main/header.php",
+		"/D/openserver/userdata/temp/scp01569/local/templates/main/components/bitrix/main.profile/main/template.php",
+		"/D/openserver/userdata/temp/scp17842/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp30087/index.php",
+		"/D/openserver/userdata/temp/scp10719/local/templates/main/components/bitrix/main.profile/changepw/template.php",
+		"/D/openserver/userdata/temp/scp30471/yspeiy-kypit-/index.php",
+		"/D/openserver/userdata/temp/scp15720/local/templates/main/js/js.js",
+		"/D/openserver/userdata/temp/scp30269/local/templates/main/components/bitrix/news.list/slider_in_item/template.php",
+		"/D/openserver/userdata/temp/scp31550/local/templates/main/css/base/catalog.css",
+		"/D/openserver/userdata/temp/scp28983/local/templates/main/css/base/all.css",
+		"/D/openserver/userdata/temp/scp17470/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp27057/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp02167/local/templates/main/header.php",
+		"/D/openserver/userdata/temp/scp45520/local/templates/main/css/base/products.css",
+		"/D/openserver/userdata/temp/scp26636/local/templates/main/components/bitrix/catalog.section/catalog/template.php",
+		"/D/openserver/userdata/temp/scp26058/local/templates/main/css/base/basket.css",
+		"/D/openserver/userdata/temp/scp19783/local/templates/main/css/owl.carousel.css",
+		"/D/openserver/userdata/temp/scp06423/local/templates/main/components/bitrix/news.list/slider_main/template.php",
+		"/D/openserver/userdata/temp/scp09494/brands/type.php",
+		"/D/openserver/userdata/temp/scp09730/catalog/index.php",
+		"/D/openserver/userdata/temp/scp09221/brands/detail.php",
+		"/D/openserver/userdata/temp/scp01694/local/templates/main/components/bitrix/main.register/popup/template.php",
+		"/D/openserver/userdata/temp/scp35033/dostavka/index.php",
+		"/D/openserver/userdata/temp/scp02436/oplata/index.php",
+		"/D/openserver/userdata/temp/scp17559/kontaktu/index.php",
+		"/D/openserver/userdata/temp/scp13403/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp52782/local/templates/main/template_styles.css",
+		"/D/openserver/userdata/temp/scp22410/local/templates/main/components/bitrix/system.pagenavigation/news/template.php",
+		"/D/openserver/userdata/temp/scp22550/local/templates/main/components/bitrix/news.list/news_list/template.php",
+		"/D/openserver/userdata/temp/scp13045/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp00381/local/templates/main/header.php",
+		"/D/openserver/userdata/temp/scp56286/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp56727/local/templates/main/components/bitrix/catalog.element/item_popup/template.php",
+		"/D/openserver/userdata/temp/scp47142/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp10732/local/templates/main/components/bitrix/menu/left/template.php",
+		"/D/openserver/userdata/temp/scp11597/local/templates/main/js/js.js",
+		"/D/openserver/userdata/temp/scp26229/local/templates/main/components/bitrix/main.profile/main/template.php",
+		"/D/openserver/userdata/temp/scp18561/local/templates/main/components/bitrix/main.register/popup/template.php",
+		"/D/openserver/userdata/temp/scp42451/index.php",
+		"/D/openserver/userdata/temp/scp13656/local/templates/main/styles.css",
+		"/D/openserver/userdata/temp/scp51602/local/templates/main/components/bitrix/news.list/journal_main/template.php",
+		"/D/openserver/userdata/temp/scp12114/local/templates/main/components/bitrix/menu/main/template.php",
+		"/D/openserver/userdata/temp/scp13415/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp51457/local/templates/main/components/bitrix/news.list/news_main/template.php",
+		"/D/openserver/userdata/temp/scp08966/local/templates/main/header.php",
+		"/W/domains/gfb.local/www/css/less/flex.less",
+		"/W/domains/gfb.local/www/css/less/homepage.less",
+		"/W/domains/gfb.local/www/index-en.html",
+		"/D/openserver/userdata/temp/scp19082/local/templates/main/components/bitrix/menu/top_menu/template.php",
+		"/D/openserver/userdata/temp/scp40301/local/templates/main/js/lib.js",
+		"/D/openserver/userdata/temp/scp34248/local/templates/main/footer.php",
+		"/D/openserver/userdata/temp/scp09392/local/templates/main/components/bitrix/news.list/slider_main/template.php",
+		"/D/openserver/userdata/temp/scp12267/local/templates/main/header.php",
+		"/D/openserver/userdata/temp/scp27511/local/templates/main/css/style.css",
+		"/D/openserver/userdata/temp/scp42907/index.php",
+		"/D/openserver/userdata/temp/scp01635/local/templates/main/styles.css",
+		"/W/domains/gfb.local/www/css/less/responsive-base.less",
+		"/D/openserver/userdata/temp/scp29352/local/templates/main/components/bitrix/menu/main/template.php",
+		"/D/openserver/userdata/temp/scp30561/local/templates/main/components/bitrix/menu/top_menu/template.php",
+		"/W/domains/gfb.local/www/index.html",
+		"/W/domains/gfb.local/www/css/docs.less",
+		"/W/domains/gfb.local/www/docs/anti_money_laundering.html",
+		"/W/domains/gfb.local/www/docs/anti_money_laundering_ru.html",
+		"/W/domains/gfb.local/www/docs/privacy_policy.html",
+		"/W/domains/gfb.local/www/docs/privacy_policy_ru.html",
+		"/W/domains/gfb.local/www/docs/risk_disclosure_notice.html",
+		"/W/domains/gfb.local/www/docs/risk_disclosure_notice_ru.html",
+		"/W/domains/gfb.local/www/docs/terms_of_use.html",
+		"/W/domains/gfb.local/www/docs/terms_of_use_ru.html",
+		"/W/domains/gfb.local/www/css/less/base.less",
+		"/W/domains/gfb.local/www/css/less/browsers.less",
+		"/W/domains/gfb.local/www/css/jquery.fullPage.css",
+		"/W/domains/gfb.local/www/-newgfb/css/less/homepage.less",
+		"/W/domains/gfb.local/www/-newgfb/js/engine.js",
+		"/W/domains/gfb.local/www/css/styles.less",
+		"/W/domains/gfb.local/www/css/styles.css",
+		"/W/domains/gfb.local/www/css/less/elements.less",
+		"/W/domains/gfb.local/www/css/less/docs.less",
+		"/W/domains/gfb.local/www/homepage.html",
+		"/W/domains/gfb.local/www/newgfb/index.html",
+		"/W/domains/gfb.local/www/newgfb/css/less/base.less",
+		"/D/-OpenServer/domains/hlebkaluga.local/www/template/js/engine.js",
+		"/W/domains/lionskit.local/css/less/articles.less",
+		"/W/domains/lionskit.local/css/less/card.less",
+		"/W/domains/lionskit.local/css/less/homepage.less",
+		"/W/domains/lionskit.local/css/less/general.less",
+		"/W/domains/lionskit.local/css/less/base.less",
+		"/W/domains/lionskit.local/catalog.html",
+		"/W/domains/lionskit.local/homepage.html",
+		"/W/domains/lionskit.local/css/less/text.less"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"intro",
+			"        ",
+			"scss",
+			"flex",
+			"less",
+			"paginat",
+			"paginag",
+			"зака",
+			"Емкость",
+			"preserve-3d",
+			";",
+			".header",
+			".tel",
+			"g1",
+			"320px",
+			".map",
+			"prev",
+			"owl-",
+			"boots",
+			"this",
+			"url(graphics",
+			", { thumbnailId: 'thumb1' }",
+			"this",
+			"lightbox",
+			"Емкость",
+			"project-",
+			"errort",
+			".error",
+			"form",
+			"requi",
+			"f3222b",
+			".modal-dialog",
+			"  ",
+			"    ",
+			"letter",
+			"footer",
+			"letter-3",
+			"letter-2",
+			"products",
+			"png",
+			"Емкость",
+			"project",
+			"video",
+			"65px",
+			"tion-param(",
+			".round",
+			"img",
+			"main",
+			"5",
+			".head",
+			"20",
+			"col-lg-2",
+			"header",
+			"746",
+			"  ",
+			"    ",
+			"less",
+			" width: 295px;",
+			"; width: 760.867px;",
+			" style=\"width: 760.867px;\"",
+			" style=\"width: 60.1333px;\"",
+			" style=\"width: 233px;\"",
+			" style=\"width: 295px;\"",
+			"  ",
+			"introSlider",
+			"header",
+			"http://",
+			"http://proverstka.com.ua",
+			"http://proverstka.com.ua/",
+			"http://proverstka.com.ua",
+			".contacts .map",
+			".contacts .contact-text",
+			"table-payment",
+			"slider_more_sizes",
+			"991p",
+			"table-re",
+			".tab_containe",
+			"flex",
+			" style=\"text-align: right\"",
+			".auth-in #stat",
+			"991",
+			"up-arrow.png",
+			"#left_box.detail_item .bottom_slider_wrap .slider_btn",
+			"up-arrow.png",
+			"icon_phone.png",
+			"basket.png",
+			"#slider",
+			".slider",
+			"\"form\"",
+			"sorting_border",
+			"<p></p>",
+			" class=\"mceSelected\"",
+			"table",
+			"rating",
+			".detail .about-product-info-box",
+			"slider",
+			"clear",
+			"pagination",
+			"advantages",
+			"resto",
+			"valida",
+			"#question-box-max",
+			"up-arrow.png",
+			"up-arrow.png ",
+			"30px",
+			"    ",
+			"close",
+			"catalog-bg",
+			"footer",
+			"50px",
+			"footer",
+			"left",
+			"advantages",
+			"slider",
+			"#news-main-wra",
+			"footer_panel",
+			"center",
+			"footer_panel",
+			"width: 1000px;",
+			"margin",
+			".bestspread",
+			".video",
+			".section",
+			" 3rem;",
+			"3rem;",
+			".section",
+			"tablec",
+			"landscape"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\t",
+			"https://proverstka.com.ua/",
+			"\t",
+			"rank ",
+			"\t",
+			"",
+			"\t",
+			"<time datetime=\"2014-01-14T22:30\">",
+			"\t",
+			"proverstka.local",
+			"../images/slider/",
+			"../images/slider",
+			"\t",
+			"\t\t",
+			"\t",
+			"",
+			"url('../fonts/",
+			"",
+			"\"",
+			"<pre><code>",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "homepage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2176,
+								2176
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "fe5dfcd1",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/scss/base.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2447,
+								2447
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2570,
+										2571
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2424,
+										2425
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "5f22293e",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"spell_check": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/scss/flex.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8605,
+								8618
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "2a9f50ef",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"spell_check": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/scss/grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								324,
+								323
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										356,
+										357
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										320,
+										321
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "529a26bf",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"spell_check": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "c2f88c17",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"spell_check": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "prima.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"homepage.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

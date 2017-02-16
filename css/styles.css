@@ -1,0 +1,417 @@
+/*---------------------------------------------------
+    SCSS Elements 0.1
+  ---------------------------------------------------
+    A set of useful SCSS mixins
+  ---------------------------------------------------*/
+/*
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
+*/
+@import url("elements.scss");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext");
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1050px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/*** reset ***********/
+html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header, section, footer, aside, nav, article {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  display: -webkit-flex;
+  font-display: swap;
+  flex-flow: column;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+html, body {
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*** standart classes *****/
+a {
+  color: #020000;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+*:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.tdn, footer a {
+  text-decoration: none;
+}
+
+.tdn:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+.tdu {
+  text-decoration: underline;
+}
+
+.tdu:hover {
+  text-decoration: none;
+}
+
+.before, .title:after, .about .advantages .num:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.form-control {
+  border: 1px solid #ef4129;
+  border-radius: 0;
+  margin-top: 0.6rem;
+  font-size: 16px;
+}
+
+.form-control:focus, .form-control:active {
+  border-color: #666;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 7.5rem;
+  position: relative;
+}
+
+.title:after {
+  position: static;
+  margin: 10px auto;
+  height: 2px;
+  width: 100px;
+  top: 0;
+  left: 0;
+  background: url("data:image/gif;base64, R0lGODlhZAACAIAAAO9BKTBEXSH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=") no-repeat center center;
+}
+
+/* =header
+---------------------------*/
+.header {
+  padding: 2rem 0;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container nav {
+  flex-grow: 1;
+}
+
+.header .container nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.header nav {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-left: 10.6rem;
+  margin-right: 15.3rem;
+  text-transform: uppercase;
+  padding-top: 4.6rem;
+}
+
+.header nav a {
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: #ef4129;
+}
+
+/* =/header
+---------------------------*/
+.login {
+  padding-top: 3.5rem;
+}
+
+.login-btn {
+  background: none;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 25px;
+}
+
+/* =navigation
+---------------------------*/
+/* =/navigation
+---------------------------*/
+/* =main
+---------------------------*/
+/* =footer
+---------------------------*/
+footer {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #30445d;
+  margin-top: 3.3rem;
+  text-align: center;
+}
+
+footer .container {
+  border-top: 1px solid #30445d;
+  padding: 4rem 0 6rem;
+}
+
+footer a {
+  color: #30445d;
+}
+
+/* =footer
+---------------------------*/
+#section1 .fp-tableCell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background: url(../images/bg-1.jpg) no-repeat center center/cover;
+  color: #fff;
+  flex: 1;
+}
+
+.intro .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.intro .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  font-size: 24px;
+  font-size: 2.4rem;
+  -webkit-border-radius: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(48, 68, 93, 0.48);
+  margin: auto;
+  padding: 7.5rem 3rem 7rem;
+  text-align: center;
+  width: 787px;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.intro .buttons {
+  padding-top: 4.8rem;
+}
+
+.intro .buttons .btn {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #30445d;
+  display: inline-block;
+  margin: 0 4rem;
+  padding: 1.8rem 3rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.intro .buttons .btn:hover {
+  background: #ef4129;
+  color: #fff;
+}
+
+.about {
+  background: url(../images/bg-2.png) no-repeat center top;
+}
+
+.about .text {
+  color: #30445d;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.about .text p {
+  line-height: 1.7;
+  margin: 3rem 0;
+}
+
+.about .advantages {
+  color: #30445d;
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.about .advantages .num {
+  font-size: 60px;
+  font-size: 6rem;
+  position: relative;
+}
+
+.about .advantages .num:after {
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  border-bottom: 2px solid #ef4129;
+}
+
+.contacts iframe {
+  margin-top: 3.5rem;
+}
+
+::-ms-clear {
+  display: none;
+}
