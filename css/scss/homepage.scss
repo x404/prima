@@ -31,22 +31,26 @@
 		padding-top: 4.8rem;
 		.btn{
 			@include font-size(1.8);
-			@include rounded(.3rem);
+			@include rounded(.4rem);
 			background: $color2;
 			color: $color4;
 			display: inline-block;
 			margin: 0 4rem;
-			padding: 1.8rem 3rem;
+			padding: 1.4rem 3rem;
 			text-decoration: none;
 			@include transition();
+			border: 2px solid $color2;
 			&:hover{
-				background: $color3;
+				background: none;
 				color: $color2;
 			}
 		}
 	}
 }
 
+
+/* =about
+---------------------------*/
 .about{
 	background: url(../images/bg-2.png) no-repeat center top;
 	.text{
@@ -60,7 +64,7 @@
 
 	.advantages{
 		color: $color4;
-		padding-top: 6rem;
+		padding-top: 2rem;
 		@include flexbox;
 		@include justify-content(space-between);
 		text-align: center;
@@ -69,18 +73,74 @@
 			position: relative;
 			&:after{
 				@extend .before;
+				border-bottom: 2px solid $color3;
+				bottom: -6px;
 				left: 50%;
 				margin-left: -35px;
 				width: 70px;
-				border-bottom: 2px solid $color3;
+			}
+		}
+		p{
+			padding-top: 2.5rem;
+		}
+	}
+}
+/* =/about
+---------------------------*/
+
+
+/* =services
+---------------------------*/
+.services{
+	background: url(../images/bg-3.jpg) no-repeat center center / cover;
+	color: $color2;
+	a{
+		color: $color2;
+		@include font-size(2.2);
+		text-decoration: none;
+		@include transition;
+		&:hover{
+			color: $color3;
+		}
+	}
+	.title{
+		&:after{
+			background-image:url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
+		}
+	}
+
+	ul{
+		background: url(../images/services-bg.png) no-repeat center top;
+		height: 470px;
+		margin-top: 5rem;
+		padding-top: 1rem;
+
+		li{
+			margin: 6rem 0;
+			position: relative;
+			min-height: 6rem;
+			&:nth-child(odd){
+				padding-right: 5rem;
+				text-align: right;
+				width: 50%;
+			}
+			&:nth-child(even){
+				padding-left: calc(50% + 5rem);
 			}
 		}
 	}
 }
+/* =/services
+---------------------------*/
 
 
+
+/* =contacts
+---------------------------*/
 .contacts{
 	iframe{
 		margin-top: 3.5rem;
 	}
 }
+/* =contacts
+---------------------------*/

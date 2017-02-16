@@ -130,10 +130,9 @@ input::-moz-focus-inner{
 
 .title{
 	@include font-size(3.6);
+	position: relative;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 7.5rem;
-	position: relative;
 	&:after{
 		@extend .before;
 		position: static;
@@ -144,7 +143,6 @@ input::-moz-focus-inner{
 		left: 0;
 		background:url("data:image/gif;base64, R0lGODlhZAACAIAAAO9BKTBEXSH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=") no-repeat center center;
 	}
-
 }
 
 
@@ -170,6 +168,7 @@ input::-moz-focus-inner{
 		text-transform: uppercase;
 		padding-top: 4.6rem;
 		a{
+			@include transition;
 			text-decoration: none;
 			&:hover{
 				color: $color3;

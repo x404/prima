@@ -184,10 +184,9 @@ input::-moz-focus-inner {
 .title {
   font-size: 36px;
   font-size: 3.6rem;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 7.5rem;
-  position: relative;
 }
 
 .title:after {
@@ -241,6 +240,8 @@ input::-moz-focus-inner {
 }
 
 .header nav a {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   text-decoration: none;
 }
 
@@ -347,23 +348,26 @@ footer a {
 .intro .buttons .btn {
   font-size: 18px;
   font-size: 1.8rem;
-  -webkit-border-radius: 0.3rem;
-  border-radius: 0.3rem;
+  -webkit-border-radius: 0.4rem;
+  border-radius: 0.4rem;
   background: #fff;
   color: #30445d;
   display: inline-block;
   margin: 0 4rem;
-  padding: 1.8rem 3rem;
+  padding: 1.4rem 3rem;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  border: 2px solid #fff;
 }
 
 .intro .buttons .btn:hover {
-  background: #ef4129;
+  background: none;
   color: #fff;
 }
 
+/* =about
+---------------------------*/
 .about {
   background: url(../images/bg-2.png) no-repeat center top;
 }
@@ -381,7 +385,7 @@ footer a {
 
 .about .advantages {
   color: #30445d;
-  padding-top: 6rem;
+  padding-top: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -402,16 +406,76 @@ footer a {
 }
 
 .about .advantages .num:after {
+  border-bottom: 2px solid #ef4129;
+  bottom: -6px;
   left: 50%;
   margin-left: -35px;
   width: 70px;
-  border-bottom: 2px solid #ef4129;
 }
 
+.about .advantages p {
+  padding-top: 2.5rem;
+}
+
+/* =/about
+---------------------------*/
+/* =services
+---------------------------*/
+.services {
+  background: url(../images/bg-3.jpg) no-repeat center center/cover;
+  color: #fff;
+}
+
+.services a {
+  color: #fff;
+  font-size: 22px;
+  font-size: 2.2rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.services a:hover {
+  color: #ef4129;
+}
+
+.services .title:after {
+  background-image: url("data:image/png;base64,R0lGODlhZAACAIAAAO9BKf///yH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=");
+}
+
+.services ul {
+  background: url(../images/services-bg.png) no-repeat center top;
+  height: 470px;
+  margin-top: 5rem;
+  padding-top: 1rem;
+}
+
+.services ul li {
+  margin: 6rem 0;
+  position: relative;
+  min-height: 6rem;
+}
+
+.services ul li:nth-child(odd) {
+  padding-right: 5rem;
+  text-align: right;
+  width: 50%;
+}
+
+.services ul li:nth-child(even) {
+  padding-left: calc(50% + 5rem);
+}
+
+/* =/services
+---------------------------*/
+/* =contacts
+---------------------------*/
 .contacts iframe {
   margin-top: 3.5rem;
 }
 
+/* =contacts
+---------------------------*/
 ::-ms-clear {
   display: none;
 }
