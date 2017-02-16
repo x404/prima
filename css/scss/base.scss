@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
 
 /*** reset ***********/
-html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label, figure, figcaption{margin:0;padding:0;border:0}
 header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 $color1:#000;
