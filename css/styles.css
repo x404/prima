@@ -262,11 +262,11 @@ label.error {
 /* =/header
 ---------------------------*/
 .login {
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
 }
 
 .login-btn {
-  background: none;
+  background-color: transparent;
   background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -274,6 +274,7 @@ label.error {
   cursor: pointer;
   height: 20px;
   width: 25px;
+  vertical-align: top;
 }
 
 /* =navigation
@@ -380,10 +381,6 @@ label.error {
   width: 535px;
 }
 
-.social .modal-email.show {
-  display: block;
-}
-
 .social .modal-email:after {
   width: 27px;
   height: 15px;
@@ -449,6 +446,11 @@ label.error {
 
 .social .modal-email .submit-btn {
   margin-top: 3rem;
+}
+
+.social .thank {
+  text-align: center;
+  padding: 2rem 0 4rem;
 }
 
 .submit-btn {

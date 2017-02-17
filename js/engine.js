@@ -36,12 +36,13 @@ $(document).ready(function(){
 			},
 			openMenu = function(e){
 				e.preventDefault();
-				$('.modal-email').addClass('show');
+				$('.modal-email').show();
 				$link.addClass('active');
+				$('.modal-email').find('.modal-title, form').show();
 			},
 			closeMenu = function(e){
 				e.preventDefault();
-				$('.modal-email').removeClass('show');
+				$('.modal-email').hide();
 				$link.removeClass('active');
 			};
 		init();
@@ -53,8 +54,9 @@ $(document).ready(function(){
 		$('#quickemail-form').submit();
 		return false;
 	});
-	
+
 	errorTxt = 'Ошибка отправки';
+	thankTxt = '<div class="thank"> Ваше сообщение успешно отправлено </div>';
 	$('#quickemail-form').validate({
 		submitHandler: function(form){
 			strSubmit=$(form).serialize();
@@ -62,11 +64,46 @@ $(document).ready(function(){
 				success: function(){
 					// posthank('callback');
 				}
-			}).fail(function(error){alert(errorTxt)});
+			}).fail(function(error){
+					$('.modal-email').append(thankTxt);
+					$('.modal-email').find('.modal-title, form').hide();
+					startClock('quickemail-form');
+
+				// alert(errorTxt)
+			});
 		}
 	});	
 
 });
+
+
+var timer;
+var sec = 4;
+
+function showTime(form){
+	sec = sec-1;
+	if (sec <=0) {
+		stopClock();
+		if (form == 'quickemail-form'){ // форма быстрого сообщения
+			$('.modal-email').fadeOut('normal', function(){
+				$('.thank').remove();
+				$('.modal-email').removeClass('show');
+				$('.social .email').removeClass('active');
+			})
+		}
+	}
+}
+
+function stopClock(){
+	window.clearInterval(timer);
+	timer = null;
+	sec = 4;
+}
+
+function startClock(form){
+	if (!timer)
+	timer = window.setInterval("showTime('"+form+"')",1000);
+}
 
 
 

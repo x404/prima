@@ -201,14 +201,15 @@ nav{
 
 
 .login{
-	padding-top: 3.5rem;
+	padding-top: 4.5rem;
 	&-btn{
-		background: none;
+		background-color: transparent;
 		@include sprite(0, 0);
 		border: none;
 		cursor: pointer;
 		height: 20px;
 		width: 25px;
+		vertical-align: top;
 	}
 }
 
@@ -299,9 +300,6 @@ nav{
 		padding: 5.6rem 2rem 3.3rem;
 		position: absolute;
 		width: 535px;
-		&.show{
-			display: block;
-		}
 		&:after{
 			@extend .before;
 			width: 27px;
@@ -359,6 +357,11 @@ nav{
 		.submit-btn{
 			margin-top: 3rem;
 		}
+	}
+
+	.thank{
+		text-align: center;
+		padding: 2rem 0 4rem;
 	}
 }
 .submit-btn{
