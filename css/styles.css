@@ -822,6 +822,13 @@ figure.effect-bubba h4 {
   transform: translate3d(0, -20px, 0);
 }
 
+@media (max-width: 1920px) {
+  figure.effect-bubba h4 {
+    -webkit-transform: translate3d(0, -12px, 0);
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
 figure.effect-bubba p {
   font-size: 15px;
   font-size: 1.5rem;
@@ -946,6 +953,14 @@ figure.effect-bubba:hover p {
   .building-list .flexbox .cell,
   .project-list .flexbox .cell {
     height: 320px;
+  }
+  .building-list figure,
+  .project-list figure {
+    max-height: 320px;
+  }
+  .building-list figure.effect-bubba h4,
+  .project-list figure.effect-bubba h4 {
+    padding-top: 26%;
   }
 }
 
