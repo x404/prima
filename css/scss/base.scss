@@ -8,10 +8,10 @@ $color1:#000;
 $color2:#fff;
 $color3:#ef4129;
 $color4:#30445d;
+$color5:#f8f8f6;
 
 
 
-$color5:#666;
 $color6:#ff5722;
 $color7:#80bbde;
 $color8:#292929;
@@ -43,7 +43,7 @@ body{
 	font-display: swap;
 	flex-flow: column;
 	height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	@include font-size(1.8);
 }
 
@@ -58,7 +58,7 @@ html, body{
 
 
 
-*:focus{outline:none}
+// *:focus{outline:none}
 
 input::-moz-focus-inner{
 	border: 0;
@@ -66,6 +66,10 @@ input::-moz-focus-inner{
 }
 
 
+.form-control{
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(1.4);	
+}
 
 /*** standart classes *****/
 p{}
@@ -117,8 +121,11 @@ input::-moz-focus-inner{
 	font-size: 16px;
 	&:focus,
 	&:active{
-		border-color: $color5;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+		// border-color: $color5;
+		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+	}
+	&.error{
+		border-color: red !important;
 	}
 }
 
@@ -144,6 +151,17 @@ input::-moz-focus-inner{
 	}
 }
 
+.center-block{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+
+label.error{
+	display: none !important
+}
 
 /* =header
 ---------------------------*/
@@ -210,21 +228,177 @@ nav{
 }
 
 
+/* =social
+---------------------------*/
+.social{
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	position: relative;
+	a{
+		display: block;
+		overflow: hidden;
+		margin: 0 1.4rem;
+		img{
+			vertical-align: top;
+		}
+		&.sitemap{
+			width: 22px;
+			height: 20px;
+			&:hover img{
+				margin-top: -20px;
+			}
+		}
+		&.instagram{
+			width: 21px;
+			height: 21px;
+			&:hover img{
+				margin-top: -21px;
+			}
+		}
+		&.facebook{
+			width: 13px;
+			height: 24px;
+			&:hover img{
+				margin-top: -24px;
+			}
+		}
+		&.googleplus{
+			height: 20px;
+			width: 31px;
+			&:hover img{
+				margin-top: -20px;
+			}
+		}
+
+		&.email{
+			@include rounded(50%);
+			background-color: $color4;
+			height: 102px;
+			margin-left: 6rem;
+			margin-right: 6rem;
+			padding-top: 34px;
+			text-align: center;
+			transition: background-color .2s;
+			width: 102px;
+			&:hover,
+			&.active{
+				background-color: $color3;
+			}
+		}
+	}
+
+	.modal-email{
+		@include rounded(1rem);
+		background-color: $color5;
+		border: 3px solid $color4;
+		bottom: 13.5rem;
+		display: none;
+		left: 50%;
+		margin-left: -270px;
+		padding: 5.6rem 2rem 3.3rem;
+		position: absolute;
+		width: 535px;
+		&.show{
+			display: block;
+		}
+		&:after{
+			@extend .before;
+			width: 27px;
+			height: 15px;
+			background: url(../images/form-arrow.gif) no-repeat center center;
+			bottom: -15px;
+			left: 50%;
+			margin-left: -14px;
+		}
+		form{
+			padding-top: .5rem;
+		}
+
+		.modal-title{
+			@include font-size(2.4);
+			color: $color4;
+			font-weight: normal;
+			text-align: center;
+		}
+		.form-control{
+			@include font-size(1.4);
+			@include rounded(.5rem);
+			border: 3px solid $color2;
+			color: $color1;
+			height: 5rem;
+			margin-top: 2.4rem;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+			transition: border-color .2s;
+			width: 100%;
+			&:focus,
+			&:active{
+				border-color: $color4;
+			}
+		}
+		textarea.form-control{
+			height: 17rem;
+			padding-top: 1rem;
+		}
+		.close{
+			@include sprite(0, -21px);
+			background-color: transparent;
+			border: none;
+			height: 20px;
+			position: absolute;
+			right: 27px;
+			top: 19px;
+			width: 21px;
+			cursor: pointer;
+			&:hover{
+				background-position: -21px -21px;
+			}
+		}
+
+		.submit-btn{
+			margin-top: 3rem;
+		}
+	}
+}
+.submit-btn{
+	@include font-size(1.8);
+	@include rounded(.5rem);
+	background-color: $color4;
+	border: none;
+	color: $color2;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	padding: 1.6rem 3.5rem;
+	text-transform: uppercase;
+	transition: opacity .2s;
+	&:hover{
+		opacity: .9;
+	}
+}
+/* =/social
+---------------------------*/
+
+
 /* =footer
 ---------------------------*/
 footer{
+	background-color: $color5;
 	@include font-size(1.4);
 	color: $color4;
 	margin-top: 3.3rem;
 	text-align: center;
 	.container{
-		border-top: 1px solid $color4;		
+		border-top: 1px solid $color4;
 		padding: 4rem 0 6rem;
 	}
 	a{
 		@extend .tdn;
 		color: $color4;
 	}
+
+
 }
 /* =footer
 ---------------------------*/

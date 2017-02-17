@@ -107,13 +107,15 @@ html, body {
   height: 100%;
 }
 
-*:focus {
-  outline: none;
-}
-
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+.form-control {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /*** standart classes *****/
@@ -158,7 +160,7 @@ input::-moz-focus-inner {
   text-decoration: none;
 }
 
-.before, .title:after, .about .advantages .num:after {
+.before, .title:after, .social .modal-email:after, .about .advantages .num:after {
   content: "";
   display: block;
   position: absolute;
@@ -171,9 +173,8 @@ input::-moz-focus-inner {
   font-size: 16px;
 }
 
-.form-control:focus, .form-control:active {
-  border-color: #666;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3);
+.form-control.error {
+  border-color: red !important;
 }
 
 .text-center {
@@ -196,6 +197,16 @@ input::-moz-focus-inner {
   top: 0;
   left: 0;
   background: url("data:image/gif;base64, R0lGODlhZAACAIAAAO9BKTBEXSH5BAAAAAAALAAAAABkAAIAAAISjI+py+3PgJy02gqz3hzdD0oFADs=") no-repeat center center;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+label.error {
+  display: none !important;
 }
 
 /* =header
@@ -271,9 +282,201 @@ input::-moz-focus-inner {
 ---------------------------*/
 /* =main
 ---------------------------*/
+/* =social
+---------------------------*/
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.social a {
+  display: block;
+  overflow: hidden;
+  margin: 0 1.4rem;
+}
+
+.social a img {
+  vertical-align: top;
+}
+
+.social a.sitemap {
+  width: 22px;
+  height: 20px;
+}
+
+.social a.sitemap:hover img {
+  margin-top: -20px;
+}
+
+.social a.instagram {
+  width: 21px;
+  height: 21px;
+}
+
+.social a.instagram:hover img {
+  margin-top: -21px;
+}
+
+.social a.facebook {
+  width: 13px;
+  height: 24px;
+}
+
+.social a.facebook:hover img {
+  margin-top: -24px;
+}
+
+.social a.googleplus {
+  height: 20px;
+  width: 31px;
+}
+
+.social a.googleplus:hover img {
+  margin-top: -20px;
+}
+
+.social a.email {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #30445d;
+  height: 102px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-top: 34px;
+  text-align: center;
+  transition: background-color .2s;
+  width: 102px;
+}
+
+.social a.email:hover, .social a.email.active {
+  background-color: #ef4129;
+}
+
+.social .modal-email {
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
+  background-color: #f8f8f6;
+  border: 3px solid #30445d;
+  bottom: 13.5rem;
+  display: none;
+  left: 50%;
+  margin-left: -270px;
+  padding: 5.6rem 2rem 3.3rem;
+  position: absolute;
+  width: 535px;
+}
+
+.social .modal-email.show {
+  display: block;
+}
+
+.social .modal-email:after {
+  width: 27px;
+  height: 15px;
+  background: url(../images/form-arrow.gif) no-repeat center center;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.social .modal-email form {
+  padding-top: .5rem;
+}
+
+.social .modal-email .modal-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #30445d;
+  font-weight: normal;
+  text-align: center;
+}
+
+.social .modal-email .form-control {
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  color: #000;
+  height: 5rem;
+  margin-top: 2.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  transition: border-color .2s;
+  width: 100%;
+}
+
+.social .modal-email .form-control:focus, .social .modal-email .form-control:active {
+  border-color: #30445d;
+}
+
+.social .modal-email textarea.form-control {
+  height: 17rem;
+  padding-top: 1rem;
+}
+
+.social .modal-email .close {
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -21px;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  position: absolute;
+  right: 27px;
+  top: 19px;
+  width: 21px;
+  cursor: pointer;
+}
+
+.social .modal-email .close:hover {
+  background-position: -21px -21px;
+}
+
+.social .modal-email .submit-btn {
+  margin-top: 3rem;
+}
+
+.submit-btn {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #30445d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  padding: 1.6rem 3.5rem;
+  text-transform: uppercase;
+  transition: opacity .2s;
+}
+
+.submit-btn:hover {
+  opacity: .9;
+}
+
+/* =/social
+---------------------------*/
 /* =footer
 ---------------------------*/
 footer {
+  background-color: #f8f8f6;
   font-size: 14px;
   font-size: 1.4rem;
   color: #30445d;
@@ -658,6 +861,10 @@ figure.effect-bubba:hover p {
 ---------------------------*/
 /* =contacts
 ---------------------------*/
+.contacts .title {
+  padding-bottom: 1.5rem;
+}
+
 .contacts iframe {
   margin-top: 3.5rem;
 }

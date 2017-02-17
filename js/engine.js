@@ -24,6 +24,48 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('.modal-email').each(function(){
+		var $this = $(this),
+			$link = $('.social .email'),
+			$close = $this.find('.close'),
+
+			init = function(){
+				$link.on('click', openMenu);
+				$close.on('click', closeMenu);
+			},
+			openMenu = function(e){
+				e.preventDefault();
+				$('.modal-email').addClass('show');
+				$link.addClass('active');
+			},
+			closeMenu = function(e){
+				e.preventDefault();
+				$('.modal-email').removeClass('show');
+				$link.removeClass('active');
+			};
+		init();
+	});
+
+
+	// validation
+	$('#quickemail-form .submit').click(function(){
+		$('#quickemail-form').submit();
+		return false;
+	});
+	
+	errorTxt = 'Ошибка отправки';
+	$('#quickemail-form').validate({
+		submitHandler: function(form){
+			strSubmit=$(form).serialize();
+			$.ajax({type: 'POST',url: '/ajax/callback.ajax.php',data: strSubmit,
+				success: function(){
+					// posthank('callback');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	});	
+
 });
 
 
