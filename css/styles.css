@@ -374,6 +374,11 @@ header.fixed .login {
 ---------------------------*/
 /* =main
 ---------------------------*/
+#map {
+  height: 370px;
+  width: 100%;
+}
+
 /* =social
 ---------------------------*/
 .social {
@@ -588,6 +593,28 @@ footer a {
 }
 
 /* =footer
+---------------------------*/
+/* =contacts
+---------------------------*/
+.contacts .title {
+  padding-bottom: 1.5rem;
+}
+
+.contacts #map {
+  height: 370px;
+  margin-top: 2rem;
+}
+
+@media (min-width: 1921px) {
+  .contacts #map {
+    margin-top: 5rem;
+  }
+  .social {
+    padding-top: 7rem;
+  }
+}
+
+/* =contacts
 ---------------------------*/
 #section1 .fp-tableCell {
   display: -webkit-box;
@@ -978,27 +1005,6 @@ figure.effect-bubba:hover p {
 }
 
 /* =/building-list
----------------------------*/
-/* =contacts
----------------------------*/
-.contacts .title {
-  padding-bottom: 1.5rem;
-}
-
-.contacts iframe {
-  margin-top: 2rem;
-}
-
-@media (min-width: 1921px) {
-  .contacts iframe {
-    margin-top: 5rem;
-  }
-  .social {
-    padding-top: 7rem;
-  }
-}
-
-/* =contacts
 ---------------------------*/
 ::-ms-clear {
   display: none;

@@ -125,8 +125,6 @@ input::-moz-focus-inner{
 	font-size: 16px;
 	&:focus,
 	&:active{
-		// border-color: $color5;
-		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
 	}
 	&.error{
 		border-color: red !important;
@@ -312,6 +310,11 @@ header.fixed{
 }
 
 
+#map{
+	height: 370px;
+	width: 100%;
+}
+
 /* =social
 ---------------------------*/
 .social{
@@ -488,4 +491,31 @@ footer{
 
 }
 /* =footer
+---------------------------*/
+
+
+/* =contacts
+---------------------------*/
+.contacts{
+	.title{
+		padding-bottom: 1.5rem;
+	}
+
+	#map{
+		height: 370px;
+		margin-top: 2rem;
+	}
+	iframe{
+		// margin-top: 2rem;
+	}
+}
+@media (min-width: 1921px){
+	.contacts #map{
+		margin-top: 5rem;
+	}
+	.social{
+		padding-top: 7rem;
+	}
+}
+/* =contacts
 ---------------------------*/

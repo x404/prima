@@ -251,9 +251,35 @@
 		<div class="contacts text-center">
 			<h2 class="title">КОНТАКТЫ</h2>
 			<p>узвіз Крутогірний, 12Б, Дніпро, Дніпропетровська область, 49000, Україна</p>
-		
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.4291230479365!2d35.058160612829084!3d48.46285539493375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2c4d2c4c4cb%3A0x18941bbfb4ab217!2z0YPQt9Cy0ZbQtyDQmtGA0YPRgtC-0LPRltGA0L3QuNC5LCAxMtCRLCDQlNC90ZbQv9GA0L7MgSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1487243244119" style="border:0; width: 100%; height: 370px" allowfullscreen></iframe>
+
+			<div id="map"></div>
+			<script>
+			var map;
+			function initMap() {
+			var myLatlng = new google.maps.LatLng(48.4628101,35.0586645);
+			var mapOptions = {
+				zoom: 18,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var styles = [{
+				stylers: [
+					{saturation: 0}
+					]
+				}];
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+				map.setOptions({styles: styles});
+
+				var image = '/images/balloon.png';
+				var primna = new google.maps.Marker({
+					position: {lat: 48.4628101, lng: 35.0586645},
+					map: map,
+					icon: image
+				});				
+			}
+			</script>
 		</div>
+
 
 		<!-- =social -->
 		<div class="social">
@@ -297,5 +323,6 @@
 <script>window.jQuery || document.write('<script src="js/jquery.validate.min.js"><\/script>')</script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/engine.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJon0oRy7AYzbHfD1DO2oSOEDaVRDxzHU&callback=initMap"></script>
 </body>
 </html>
