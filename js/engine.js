@@ -65,6 +65,10 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.callme').click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('expand');
+	})
 
 
 	$('.modal-email').each(function(){

@@ -529,6 +529,55 @@ footer{
 	}
 }
 
+
+.callme{
+	@include font-size(1.7);
+	@include rounded(7rem);
+	background-color: $color3;
+	bottom: 150px;
+	color: $color2;
+	cursor: pointer;
+	height: 7rem;
+	position: fixed;
+	right: 55px;
+	width: 7rem;
+	transition: width .3s;
+	overflow: hidden;
+	&:before{
+		@extend .before;
+		@include sprite(-45px, -58px);
+		height: 32px;
+		width: 32px;
+		left: 50%;
+		top: 50%;
+		margin-left: -16px;
+		margin-top: -16px;
+	}
+	&.expand{
+		padding-left: 87px;
+		padding-right: 30px;
+		// width: auto;
+		width: 38rem;
+		&:before{
+			@extend .before;
+			@include sprite(0, -58px);
+			height: 45px;
+			width: 45px;
+			left: 35px;
+			top: 27px;
+		}
+		.inner{
+			@include flexbox;
+			min-width: 260px;
+		}
+	}
+	.inner{
+		display: none;
+		height: 100%;
+		@include align-items(center);
+	}
+}
+
 /* =contacts
 ---------------------------*/
 .contacts{
