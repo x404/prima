@@ -495,12 +495,39 @@ footer{
 		@extend .tdn;
 		color: $color4;
 	}
-
-
 }
 /* =footer
 ---------------------------*/
 
+
+#up{
+	@include rounded(50%);
+	background: $color4;
+	border: 3px solid $color4;
+	bottom: 50px;
+	display: none;
+	height: 7rem;
+	position: fixed;
+	right: 55px;
+	transition: background-color .3s;
+	width: 7rem;
+	&:before{
+		@extend .before;
+		@include sprite(0, -41px);
+		height: 17px;
+		width: 28px;
+		left: 50%;
+		margin-left: -14px;
+		top: 50%;
+		margin-top: -8px;
+	}
+	&:hover{
+		&:before{
+			background-position: -29px -41px;			
+		}
+		background-color: $color2;
+	}
+}
 
 /* =contacts
 ---------------------------*/

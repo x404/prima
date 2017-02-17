@@ -51,7 +51,7 @@
 /* =about
 ---------------------------*/
 .about{
-	background: url(../images/bg-2.png) no-repeat center top;
+	background: url(../images/bg-2.png) no-repeat center top, url(../images/bg-2-f.png) no-repeat center bottom -100px;
 	.text{
 		color: $color4;
 		@include font-size(1.4);
@@ -235,7 +235,9 @@ figure.effect-bubba:hover p {
 
 .building-list,
 .project-list{
-	background: url(../images/bg-4.jpg) no-repeat center center / cover;
+	// background: url(../images/bg-4.jpg) no-repeat center center / cover;
+
+	background: url(../images/pic-left.png) no-repeat left top,  url(../images/pic-right.png) no-repeat right top ;
 
 	.cell{
 		text-transform: uppercase;

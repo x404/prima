@@ -165,7 +165,7 @@ input::-moz-focus-inner {
   display: none !important;
 }
 
-.before, .title:after, .social .modal-email:after, .about .advantages .num:after {
+.before, .title:after, .social .modal-email:after, #up:before, .about .advantages .num:after {
   content: "";
   display: block;
   position: absolute;
@@ -573,6 +573,40 @@ footer a {
 
 /* =footer
 ---------------------------*/
+#up {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #30445d;
+  border: 3px solid #30445d;
+  bottom: 50px;
+  display: none;
+  height: 7rem;
+  position: fixed;
+  right: 55px;
+  transition: background-color .3s;
+  width: 7rem;
+}
+
+#up:before {
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -41px;
+  height: 17px;
+  width: 28px;
+  left: 50%;
+  margin-left: -14px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+#up:hover {
+  background-color: #fff;
+}
+
+#up:hover:before {
+  background-position: -29px -41px;
+}
+
 /* =contacts
 ---------------------------*/
 .contacts .title {
@@ -671,7 +705,7 @@ footer a {
 /* =about
 ---------------------------*/
 .about {
-  background: url(../images/bg-2.png) no-repeat center top;
+  background: url(../images/bg-2.png) no-repeat center top, url(../images/bg-2-f.png) no-repeat center bottom -100px;
 }
 
 .about .text {
@@ -869,7 +903,7 @@ figure.effect-bubba:hover p {
 ---------------------------*/
 .building-list,
 .project-list {
-  background: url(../images/bg-4.jpg) no-repeat center center/cover;
+  background: url(../images/pic-left.png) no-repeat left top, url(../images/pic-right.png) no-repeat right top;
 }
 
 .building-list .cell,

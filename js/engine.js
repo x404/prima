@@ -34,9 +34,13 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		$this = $(this);
 
-		// h = $("#intro").height() + 9;
-		/* =header */
-		// h = 350; 
+		if ($(this).scrollTop() > 200){
+			$("#up").fadeIn();
+		} else{
+			$("#up").fadeOut();
+		}
+
+
 		h = $('.header').height() + 9;
 		if($this.scrollTop() > h && panel.hasClass('default')) {
 			panel.removeClass('default').addClass('fixed');
@@ -50,6 +54,15 @@ $(document).ready(function(){
 				}
 			}
 		}
+	});
+
+
+	$('#up').click(function (e){
+		e.preventDefault();
+		$("body,html").animate({
+			scrollTop:0
+		}, 800);
+		return false;
 	});
 
 
@@ -76,6 +89,8 @@ $(document).ready(function(){
 			};
 		init();
 	});
+
+
 
 
 
