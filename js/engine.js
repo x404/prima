@@ -36,8 +36,8 @@ $(document).ready(function(){
 			},
 			openMenu = function(e){
 				e.preventDefault();
-				$('.modal-email').show();
-				$link.addClass('active');
+				$('.modal-email').toggle();
+				$link.toggleClass('active');
 				$('.modal-email').find('.modal-title, form').show();
 			},
 			closeMenu = function(e){
