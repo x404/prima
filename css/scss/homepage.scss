@@ -232,13 +232,19 @@ figure.effect-bubba:hover p {
 
 /* =project-list
 ---------------------------*/
+.project-list{
+	background: url(../images/pic-left.png) no-repeat -100% top ,  url(../images/pic-right.png) no-repeat left 300% top 0;
+	background-size: contain;
+	-webkit-transition: all 2.5s ease;
+	transition: all 2.5s ease;
+	will-change: transform;
+	&.showbg{
+		background-position: 0 top, left 60% top;
+	}
+}	
 
 .building-list,
 .project-list{
-	// background: url(../images/bg-4.jpg) no-repeat center center / cover;
-
-	background: url(../images/pic-left.png) no-repeat left top,  url(../images/pic-right.png) no-repeat right top ;
-
 	.cell{
 		text-transform: uppercase;
 	}

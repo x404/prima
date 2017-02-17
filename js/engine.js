@@ -5,7 +5,14 @@ $(document).ready(function(){
 		fitToSection : false,
 		scrollBar : true,
 		normalScrollElements: '#section7',
-		bigSectionsDestination : 'bottom'
+		bigSectionsDestination : 'bottom',
+
+		onLeave: function(index, newIndex, direction){
+			// console.log(index);
+			if (index == 3 && direction =='down'){
+				$('#section4').addClass('showbg')
+			}
+		}
 	});
 
 	// $('nav').scrollspy();
