@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 	$('.modal-email').each(function(){
 		var $this = $(this),
-			$link = $('.social .email'),
+			$link = $('.social a.email'),
 			$close = $this.find('.close'),
 
 			init = function(){
@@ -90,14 +90,12 @@ $(document).ready(function(){
 			strSubmit=$(form).serialize();
 			$.ajax({type: 'POST',url: '/ajax/callback.ajax.php',data: strSubmit,
 				success: function(){
-					// posthank('callback');
-				}
-			}).fail(function(error){
 					$('.modal-email').append(thankTxt);
 					$('.modal-email').find('.modal-title, form').hide();
 					startClock('quickemail-form');
-
-				// alert(errorTxt)
+				}
+			}).fail(function(error){
+				alert(errorTxt)
 			});
 		}
 	});	

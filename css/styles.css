@@ -161,6 +161,10 @@ input::-moz-focus-inner {
   text-decoration: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 .before, .title:after, .social .modal-email:after, .about .advantages .num:after {
   content: "";
   display: block;
@@ -389,6 +393,7 @@ header.fixed .login {
   -moz-align-items: center;
   align-items: center;
   position: relative;
+  padding-top: 4rem;
 }
 
 .social a {
@@ -466,6 +471,7 @@ header.fixed .login {
   padding: 5.6rem 2rem 3.3rem;
   position: absolute;
   width: 535px;
+  z-index: 9999;
 }
 
 .social .modal-email:after {
@@ -565,7 +571,6 @@ header.fixed .login {
 /* =footer
 ---------------------------*/
 footer {
-  background-color: #f8f8f6;
   font-size: 14px;
   font-size: 1.4rem;
   color: #30445d;
@@ -575,7 +580,7 @@ footer {
 
 footer .container {
   border-top: 1px solid #30445d;
-  padding: 4rem 0 6rem;
+  padding: 4rem 0 0;
 }
 
 footer a {
@@ -981,7 +986,16 @@ figure.effect-bubba:hover p {
 }
 
 .contacts iframe {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 1921px) {
+  .contacts iframe {
+    margin-top: 5rem;
+  }
+  .social {
+    padding-top: 7rem;
+  }
 }
 
 /* =contacts

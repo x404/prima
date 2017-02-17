@@ -101,6 +101,10 @@ input::-moz-focus-inner{
 }
 
 
+.hide{
+	display: none !important;
+}
+
 @mixin sprite($x:0, $y:0){
 	background-image: url(../images/sprite.png);
 	background-repeat: no-repeat;
@@ -315,6 +319,7 @@ header.fixed{
 	@include justify-content(center);
 	@include align-items(center);
 	position: relative;
+	padding-top: 4rem;
 	a{
 		display: block;
 		overflow: hidden;
@@ -379,6 +384,7 @@ header.fixed{
 		padding: 5.6rem 2rem 3.3rem;
 		position: absolute;
 		width: 535px;
+		z-index: 9999;
 		&:after{
 			@extend .before;
 			width: 27px;
@@ -466,14 +472,13 @@ header.fixed{
 /* =footer
 ---------------------------*/
 footer{
-	background-color: $color5;
 	@include font-size(1.4);
 	color: $color4;
 	margin-top: 3.3rem;
 	text-align: center;
 	.container{
 		border-top: 1px solid $color4;
-		padding: 4rem 0 6rem;
+		padding: 4rem 0 0;
 	}
 	a{
 		@extend .tdn;
