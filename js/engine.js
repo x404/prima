@@ -7,6 +7,8 @@ $(document).ready(function(){
 		normalScrollElements: '#section7',
 		bigSectionsDestination : 'bottom'
 	});
+
+	// $('nav').scrollspy();
 	
 	// плавная промотка из хедера
 	$('nav a[href*="#"]:not([href="#"]), .intro a[href*="#"]:not([href="#"])').click(function() {
