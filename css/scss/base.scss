@@ -163,19 +163,46 @@ label.error{
 	display: none !important
 }
 
+.bodyFixed{
+	.title{
+		padding-top: 8rem;
+	}
+}
+
 /* =header
 ---------------------------*/
-nav{
-	// position: fixed;
+header.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	height: 100px;
+	box-shadow: 0 0 15px #ccc;
+
+	.logo{
+		img{
+			width: 114px;
+			height: auto;
+		}
+	}
+	nav{
+		padding-top: 3rem;
+	}
+
+	.login{
+		padding-top: 3rem;
+	}
 }
+
 .header{
+	background-color: $color2;
 	padding: 2rem 0;
+	width: 100%;
+	position: fixed;
+	height: 14rem;
+	@include transition;
 	.container{
 		@include flexbox;
-		nav{
-			
-
-		}
 	}
 
 	nav{
@@ -239,6 +266,14 @@ nav{
 			}
 		}
 	}
+
+	.logo{
+		width: 183px;
+		img{
+			@include transition;
+			width: 183px;
+		}
+	} 
 }
 /* =/header
 ---------------------------*/

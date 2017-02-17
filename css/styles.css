@@ -210,10 +210,42 @@ label.error {
   display: none !important;
 }
 
+.bodyFixed .title {
+  padding-top: 8rem;
+}
+
 /* =header
 ---------------------------*/
+header.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  height: 100px;
+  box-shadow: 0 0 15px #ccc;
+}
+
+header.fixed .logo img {
+  width: 114px;
+  height: auto;
+}
+
+header.fixed nav {
+  padding-top: 3rem;
+}
+
+header.fixed .login {
+  padding-top: 3rem;
+}
+
 .header {
+  background-color: #fff;
   padding: 2rem 0;
+  width: 100%;
+  position: fixed;
+  height: 14rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .header .container {
@@ -302,6 +334,16 @@ label.error {
 
 .header nav a:hover {
   color: #ef4129;
+}
+
+.header .logo {
+  width: 183px;
+}
+
+.header .logo img {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 183px;
 }
 
 /* =/header
@@ -894,6 +936,17 @@ figure.effect-bubba:hover p {
   color: #fff;
   padding: 1.8rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1920px) {
+  .building-list .title,
+  .project-list .title {
+    /* padding-top: 5rem; */
+  }
+  .building-list .flexbox .cell,
+  .project-list .flexbox .cell {
+    height: 320px;
+  }
 }
 
 /* =/project-list

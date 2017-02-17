@@ -224,9 +224,13 @@ figure.effect-bubba:hover p {
 
 /* =project-list
 ---------------------------*/
+
 .building-list,
 .project-list{
 	background: url(../images/bg-4.jpg) no-repeat center center / cover;
+
+
+
 	.cell{
 		text-transform: uppercase;
 	}
@@ -283,6 +287,16 @@ figure.effect-bubba:hover p {
 		color: #fff;
 		padding: 1.8rem;
 		text-transform: uppercase;
+	}
+
+
+	@media (max-width: 1920px){
+		.title{
+			/* padding-top: 5rem; */
+		}
+		.flexbox .cell{
+			height: 320px;
+		}
 	}
 }
 /* =/project-list

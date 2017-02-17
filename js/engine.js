@@ -25,6 +25,33 @@ $(document).ready(function(){
 	});
 
 
+	// scroll Page
+	var panel = $('.header'),
+		pos = panel.offset();
+
+	$(window).scroll(function(){
+		$this = $(this);
+
+		// h = $("#intro").height() + 9;
+		/* =header */
+		// h = 350; 
+		h = $('.header').height() + 9;
+		if($this.scrollTop() > h && panel.hasClass('default')) {
+			panel.removeClass('default').addClass('fixed');
+			$("body").addClass('bodyFixed');
+		}
+		else {
+			if ($this.scrollTop() < h){
+				if($this.scrollTop() <= pos.top && panel.hasClass('fixed')) {
+					panel.removeClass('fixed').addClass('default');
+					$("body").removeClass('bodyFixed');
+				}
+			}
+		}
+	});
+
+
+
 	$('.modal-email').each(function(){
 		var $this = $(this),
 			$link = $('.social .email'),
@@ -47,6 +74,7 @@ $(document).ready(function(){
 			};
 		init();
 	});
+
 
 
 	// validation
