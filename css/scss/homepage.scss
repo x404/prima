@@ -6,9 +6,25 @@
 }
 
 .intro{
-	background: url(../images/bg-1.jpg) no-repeat center center / cover;
+	// background: url(../images/bg-1.jpg) no-repeat center center / cover;
+	
+	background: #104378;
+	background: linear-gradient(to bottom, #104378 60%, #fff);
+
+
 	color: $color2;
 	flex: 1;
+
+	.bg1,
+	.bg2{
+		@include flexbox;
+		flex: 1; 
+		height: 100%;
+	}
+
+	.bg2{
+		background: url(../images/cloud.png) no-repeat center 50px;
+	}
 	.container{
 		@include flexbox;
 		height: 100%;

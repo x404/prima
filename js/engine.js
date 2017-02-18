@@ -20,8 +20,6 @@ $(document).ready(function(){
 		}
 	});
 
-	// $('nav').scrollspy();
-	
 	// плавная промотка из хедера
 	$('nav a[href*="#"]:not([href="#"]), .intro a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -37,6 +35,34 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+
+	// parallax
+$('body').parallax({
+	'elements': [
+		{
+			'selector': 'div.bg2',
+			'properties': {
+				'x': {
+					'background-position-x': {
+					'initial': -15,
+					'multiplier': 0.015,
+					'invert': true,
+					'unit': '%'
+					}
+				},
+				'y': {
+					'background-position-y': {
+						'initial': 50,
+						'multiplier': 0.01,
+						'invert': false,
+						'unit': '%'
+						}
+					}
+			}
+		}
+	]
+});
 
 
 	// scroll Page

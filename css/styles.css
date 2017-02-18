@@ -895,9 +895,25 @@ footer a {
 }
 
 .intro {
-  background: url(../images/bg-1.jpg) no-repeat center center/cover;
+  background: #104378;
+  background: linear-gradient(to bottom, #104378 60%, #fff);
   color: #fff;
   flex: 1;
+}
+
+.intro .bg1,
+.intro .bg2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.intro .bg2 {
+  background: url(../images/cloud.png) no-repeat center 50px;
 }
 
 .intro .container {
