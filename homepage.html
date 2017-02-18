@@ -57,7 +57,7 @@
 					</ul>
 				</nav>
 				<div class="login">
-					<button type="button" class="login-btn"></button>
+					<button type="button" class="login-btn" data-toggle="modal" data-target="#loginModal"></button>
 				</div>
 			</div>
 		</header>
@@ -294,9 +294,9 @@
 				<h4 class="modal-title">ОТПРАВИТЬ БЫСТРОЕ СООБЩЕНИЕ</h4>
 				<form action="#" method="post" id="quickemail-form">
 					<fieldset>
-						<input type="text" name="name" class="form-control required1" value="" placeholder="Ваше имя" />
-						<input type="email" name="email" class="form-control email required1" value="" placeholder="Email" />
-						<textarea name="msg" cols="30" class="form-control required1" rows="10" placeholder="Текст сообщения"></textarea>
+						<input type="text" name="name" class="form-control required" value="" placeholder="Ваше имя" aria-required />
+						<input type="email" name="email" class="form-control email required" value="" placeholder="Email" aria-required />
+						<textarea name="msg" cols="30" class="form-control required" rows="10" placeholder="Текст сообщения" aria-required></textarea>
 						<button type="button" class="submit submit-btn center-block">ОТПРАВИТЬ</button>
 					</fieldset>
 				</form>
@@ -324,6 +324,36 @@
 <a href="#" id="up"></a>
 
 
+<!-- =order form -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"></button>
+				<h4 class="modal-title">ВХОД</h4>
+				<span class="subtitle"></span>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post" id="order_form">
+					<fieldset>
+						<div>
+							<label for="login">Логин</label>
+							<input name="login" id="login" type="text" class="form-control required" value="" placeholder="Логин" aria-required />
+						</div>
+						<div>
+							<label for="password">Пароль</label>
+							<input name="password" id="password" type="password" class="form-control required" value="" placeholder="Пароль" aria-required />
+						</div>
+						<input type="submit" class="btn submit-btn" value="Отправить" />
+					</fieldset>
+				</form>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- =/order form -->
+
+
 <div id="outdated"></div>
 <link rel="stylesheet" property="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css" />
 <script src="outdatedbrowser/outdatedbrowser.min.js"></script>
@@ -332,6 +362,7 @@
 <script>window.jQuery || document.write('<script src="js/jquery.validate.min.js"><\/script>')</script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/scrollspy.min.js"></script>
+<script src="js/modal.min.js"></script>
 <script src="js/engine.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJon0oRy7AYzbHfD1DO2oSOEDaVRDxzHU&callback=initMap"></script>
 </body>

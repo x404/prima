@@ -177,7 +177,7 @@ header.fixed{
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 9999;
+	z-index: 1000;
 	height: 100px;
 	box-shadow: 0 0 15px #ccc;
 
@@ -435,20 +435,6 @@ header.fixed{
 			height: 17rem;
 			padding-top: 1rem;
 		}
-		.close{
-			@include sprite(0, -21px);
-			background-color: transparent;
-			border: none;
-			height: 20px;
-			position: absolute;
-			right: 27px;
-			top: 19px;
-			width: 21px;
-			cursor: pointer;
-			&:hover{
-				background-position: -21px -21px;
-			}
-		}
 
 		.submit-btn{
 			margin-top: 3rem;
@@ -458,6 +444,21 @@ header.fixed{
 	.thank{
 		text-align: center;
 		padding: 2rem 0 4rem;
+	}
+}
+
+button.close{
+	@include sprite(0, -21px);
+	background-color: transparent;
+	border: none;
+	height: 20px;
+	position: absolute;
+	right: 27px;
+	top: 19px;
+	width: 21px;
+	cursor: pointer;
+	&:hover{
+		background-position: -21px -21px;
 	}
 }
 .submit-btn{
@@ -602,3 +603,181 @@ footer{
 }
 /* =contacts
 ---------------------------*/
+
+
+
+#loginModal{
+	.modal-title{
+		display: inline-block;
+		position: relative;
+		margin-left: 3rem;
+		&:before{
+			@extend .before;
+			@include sprite(0,0);
+			width: 25px;
+			height: 20px;
+			top: 8px;
+			left: -43px;
+		}
+	}
+}
+
+.modal-open {
+	overflow: hidden !important;
+}
+.modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	padding-right: 0 !important;
+
+	label{
+		color: $color2;
+		display: block;
+		height: 0;
+	}
+
+	.btn{
+		@extend .center-block;
+		margin-top: 3rem;
+	}
+
+	form{
+		div{
+			position: relative;
+			margin-top: 1.7rem;
+			label.error{
+				background: url(../images/error_icon.png) no-repeat left top;
+				width: 21px;
+				height: 21px;
+				position: absolute;
+				right: -25px;
+				top: 13px;
+			}
+		}
+	}
+}
+.modal.fade .modal-dialog {
+	-webkit-transform: translate(0, -25%);
+	-ms-transform: translate(0, -25%);
+	-o-transform: translate(0, -25%);
+	transform: translate(0, -25%);
+	-webkit-transition: -webkit-transform 0.3s ease-out;
+	-o-transition: -o-transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	margin: 10px;
+	position: relative;
+	width: auto;
+	.form-control{
+		border: 1px solid $color2;
+		width: 100%;
+		height: 5rem;
+		@include rounded(10px);
+		padding-left: 1.8rem;
+		padding-right: 1.8rem;
+	}
+}
+.modal-content {
+	background-color: $color5;
+	border: 3px solid $color4;
+	position: relative;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.modal-header {
+	color: $color4;
+	padding: 4rem 42px 0;
+	text-align: center;
+	.subtitle{
+		@include font-size(1.8);
+	}
+}
+button.close {
+
+}
+.modal-title {
+	@include font-size(2.4);
+	margin: 0;
+	line-height: 1.42857143;
+}
+.modal-body {
+	position: relative;
+	padding: 0 42px 45px;
+}
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 353px;
+		margin: 7% auto;
+	}
+	.modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+	.modal-sm {
+		width: 300px;
+	}
+}
+@media (min-width: 992px) {
+	.modal-lg {
+		width: 900px;
+	}
+}
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+	content: " ";
+	display: table;
+}
+.modal-header:after,
+.modal-footer:after {
+	clear: both;
+}
