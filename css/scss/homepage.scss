@@ -239,7 +239,7 @@ figure.effect-bubba:hover p {
 	transition: all 2.5s ease;
 	will-change: transform;
 	&.showbg{
-		background-position: 0 top, left 60% top;
+		background-position: 0 top, left 100% top;
 	}
 }	
 
@@ -288,7 +288,6 @@ figure.effect-bubba:hover p {
 		width: 100%;
 	}
 
-
 	figure figcaption, figure figcaption > a {
 		height: 100%;
 		left: 0;
@@ -332,6 +331,22 @@ figure.effect-bubba:hover p {
 .building-list{
 	background: url(../images/bg-5.jpg) no-repeat center center / cover;
 }
+
+.building-list{
+	background: url(../images/pic-left.png) no-repeat -100% top ,  url(../images/pic-right.png) no-repeat left 300% top 0;
+	background-size: contain;
+	-webkit-transition: all 2.5s ease;
+	transition: all 2.5s ease;
+	will-change: transform;
+	.fp-tableCell{
+		background-color: rgba(48, 68, 93, .72);
+	}
+	&.showbg{
+		background-position: 0 top, left 100% top;
+	}
+}
+
+
 /* =/building-list
 ---------------------------*/
 

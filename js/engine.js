@@ -9,8 +9,13 @@ $(document).ready(function(){
 
 		onLeave: function(index, newIndex, direction){
 			// console.log(index);
-			if (index == 3 && direction =='down'){
+			// console.log(newIndex);
+			if (newIndex == 4){
 				$('#section4').addClass('showbg')
+			}
+
+			if (newIndex == 5){
+				$('#section5').addClass('showbg')
 			}
 		}
 	});
