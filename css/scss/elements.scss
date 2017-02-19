@@ -38,6 +38,11 @@
 	transition: all $duration $ease;
 }
 
+@mixin transition-param($param:opacity, $duration:0.2s, $ease:ease-out) {
+	-webkit-transition: $param $duration $ease;
+	transition: $param $duration $ease;
+}
+
 @mixin transition-duration($duration: 0.2s) {
 	-moz-transition-duration: $duration;
 	-webkit-transition-duration: $duration;

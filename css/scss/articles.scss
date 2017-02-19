@@ -1,0 +1,81 @@
+.article_list{
+	@include flexbox;
+	@include justify-content(space-between);
+	flex-wrap: wrap;
+	text-align: center;
+	&_cell{
+		@include flexbox;
+		@include rounded(5px);
+		@include transition-param(border-color);
+		background-color: $color5;
+		border: 3px solid $color2;
+		margin: 2rem 0;
+		padding-bottom: 2rem;
+		width: 360px;
+		&:hover{
+			border-color: $color4;
+			h3{
+				color: $color4;
+			}
+			.pic{
+				position: relative;
+				&:before{
+					@extend .before;
+					height: 100%;
+					width: 100%;
+					left: 0;
+					top: 0;
+					background-color: rgba(48, 68, 93, .25);
+					z-index: 10;
+				}
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
+		a{
+			@include flexbox;
+			@include flex-direction(column);
+			@include align-items(center);
+			text-decoration: none;
+		}
+		.pic{
+			overflow: hidden;
+			img{
+				@include rounded(3px 3px 0 0);
+				@include transition-param(transform);
+			}
+			&:before{
+				@include transition-param(background-color);
+			}
+		}
+		hr{
+			width: 64px;
+			background-color: $color3;
+			height: 2px;
+			border: none;
+			margin-top: 2rem;
+		}
+		h3{
+			@include flexbox;
+			@include align-items(center);
+			flex: 1;
+			min-height: 14rem; 
+		}
+
+		.date_pub{
+			@include font-size(1.4);
+			color: $color6;
+			margin-top: 1.5rem;
+			position: relative;
+			&:before{
+				@extend .before;
+				@include sprite(-58px, 0);
+				left: -28px;
+				top: 0px;
+				height: 20px;
+				width: 19px;
+			}
+		}
+	}
+}
