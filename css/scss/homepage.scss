@@ -9,9 +9,7 @@
 	// background: url(../images/bg-1.jpg) no-repeat center center / cover;
 	
 	background: #104378;
-	background: linear-gradient(to bottom, #104378 60%, #fff);
-
-
+	background: linear-gradient(to bottom, #104378 15%, #fff);
 	color: $color2;
 	flex: 1;
 
@@ -31,7 +29,6 @@
 	.bg2{
 		background: url(../images/forest.png) no-repeat center 200px;
 	}
-	
 	.bg3{
 		background: url(../images/house.png) no-repeat center 150px;
 	}
@@ -49,12 +46,14 @@
 		@include font-size(2.4);
 		@include rounded(1.5rem);
 		background: rgba(48, 68, 93, 0.48);
-		margin: auto;
-		padding: 7.5rem 3rem 7rem;
-		text-align: center;
-		width: 787px;
 		flex-direction: column;
 		line-height: 1.3;
+		margin: auto;
+		padding: 7.5rem 3rem 7rem;
+		position: relative;
+		text-align: center;
+		top: 40px;
+		width: 787px;
 	}
 	.buttons{
 		padding-top: 4.8rem;
@@ -92,10 +91,10 @@
 	}
 
 	.advantages{
-		color: $color4;
-		padding-top: 2rem;
 		@include flexbox;
 		@include justify-content(space-between);
+		color: $color4;
+		padding-top: 2rem;
 		text-align: center;
 		.num{
 			@include font-size(6);
@@ -131,9 +130,29 @@
 }
 
 
+
+
+.animated { -webkit-animation-fill-mode:both; animation-fill-mode:both;}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+@keyframes fadeIn {
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+
+
+
+
 .services{
 	background: url(../images/bg-3.jpg) no-repeat center center / cover;
 	color: $color2;
+	.container{
+		position: relative;		
+	}
+
 	a{
 		@include font-size(2.2);
 		@include transition;
@@ -143,26 +162,133 @@
 			color: $color3;
 		}
 	}
+	
+	.text{
+		position: relative;
+	}
+
+	.line{
+		position: absolute;
+		height: 470px;
+		left: 50%;
+		top: 0;
+		width: 14px;
+		margin-left: -7px;
+		&:before{
+			@extend .before;
+			@include rounded(50%);
+			background: $color2;
+			height: 14px;
+			width: 14px;
+		}
+
+		.animated{
+			height: 53px;
+			margin-bottom: 60px;
+		}
+	}
+
+$delayLStart : .2s;
+$durL : .5s;
+$durC : .5s;
+$delayC : .8s;
+
+	.line_1_1,
+	.line_1_2,
+	.line_1_3,
+	.line_1_4
+	{
+		background: $color2;
+		transition: height linear $durL;
+		height: 0;
+		margin-left: 5px;
+		width: 3px;
+	}
+
+
+	.line_1_1{
+		-webkit-transition-delay: $delayLStart;
+		transition-delay: $delayLStart;
+	}
+	.line_1_2{
+		-webkit-transition-delay: $delayLStart + $durC;
+		transition-delay: $delayLStart + $durC;
+	}
+	.line_1_3{
+		-webkit-transition-delay: $delayLStart + 2*$durC;
+		transition-delay: $delayLStart + 2*$durC;
+	}
+	.line_1_4{
+		-webkit-transition-delay: $delayLStart + 3*$durC;
+		transition-delay: $delayLStart + 3*$durC;
+	}
 
 
 	ul{
-		background: url(../images/services-bg.png) no-repeat center top;
 		height: 470px;
 		margin-top: 5rem;
 		padding-top: 1rem;
-
 		li{
+			line-height: 1;
 			margin: 6rem 0;
+			min-height: 5.3rem;
+			opacity: 0;
 			position: relative;
-			min-height: 6rem;
+			z-index: 10;
 			&:nth-child(odd){
 				padding-right: 5rem;
+				position: relative;
 				text-align: right;
 				width: 50%;
+				a{
+					position: relative;
+					&:after{
+						@extend .before;
+						background: url(../images/circle.png) no-repeat right top;
+						height: 60px;
+						right: -80px;
+						top: -13px;
+						width: 60px;
+					}
+				}
 			}
 			&:nth-child(even){
 				padding-left: calc(50% + 5rem);
+				a{
+					position: relative;
+					&:before{
+						@extend .before;
+						background: url(../images/circle.png) no-repeat left top;
+						height: 60px;
+						left: -80px;
+						top: -13px;
+						width: 60px;
+					}	
+				}
 			}
+
+			&.fadeIn{
+				-webkit-animation-name:fadeIn;
+				animation-name:fadeIn;
+				-webkit-animation-duration:$durC;
+				animation-duration:$durC;
+				&.service-1{
+					-webkit-animation-delay: $delayLStart + $durL;
+					animation-delay: $delayLStart + $durL;
+				}
+				&.service-2{
+					-webkit-animation-delay: $delayLStart + $durL + $durC ;
+					animation-delay: $delayLStart + $durL + $durC ;
+				}
+				&.service-3{
+					-webkit-animation-delay:  $delayLStart + 2*$durL + $durC ;
+					animation-delay:  $delayLStart + 2*$durL + $durC ;
+				}
+				&.service-4{
+					-webkit-animation-delay:  $delayLStart + 2*$durL + 2*$durC ;
+					animation-delay:  $delayLStart + 2*$durL + 2*$durC ;
+				}
+			}	
 		}
 	}
 }

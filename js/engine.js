@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	// $('.fadeIn').css("opacity", "0");
+
 	$('#fullpage').fullpage({
 		responsiveWidth : 770,
 		autoScrolling : true,
@@ -9,7 +11,12 @@ $(document).ready(function(){
 
 		onLeave: function(index, newIndex, direction){
 			// console.log(index);
-			// console.log(newIndex);
+			console.log(newIndex);
+			if (newIndex == 3){
+				$('.services ul li').addClass('fadeIn animated');
+				$('.services .line > div').addClass('animated');
+			}
+
 			if (newIndex == 4){
 				$('#section4').addClass('showbg')
 			}
@@ -38,98 +45,99 @@ $(document).ready(function(){
 
 
 	// parallax
-$('body').parallax({
-	'elements': [
-		{
-			// bushes
-			'selector': 'div.bg4',
-			'properties': {
-				'x': {
-					'background-position-x': {
-					'initial': -55,
-					'multiplier': 0.0018,
-					'invert': true,
-					'unit': '%'
-					}
-				},
-				'y': {
-					'background-position-y': {
-						'initial': 240,
-						'multiplier': 0.001,
-						'invert': false,
+	$('body').parallax({
+		'elements': [
+			{
+				// bushes
+				'selector': 'div.bg4',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -95,
+						'multiplier': 0.0018,
+						'invert': true,
 						'unit': '%'
 						}
-					}
-			}
-		},	
-		{
-			// house
-			'selector': 'div.bg3',
-			'properties': {
-				'x': {
-					'background-position-x': {
-					'initial': -90,
-					'multiplier': 0.002,
-					'invert': true,
-					'unit': '%'
-					}
-				},
-				'y': {
-					'background-position-y': {
-						'initial': 170,
-						'multiplier': 0.004,
-						'invert': false,
+					},
+					'y': {
+						'background-position-y': {
+							'initial': 150,
+							'multiplier': 0.001,
+							'invert': false,
+							'unit': '%'
+							}
+						}
+				}
+			},	
+			{
+				// house
+				'selector': 'div.bg3',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -95,
+						'multiplier': 0.002,
+						'invert': true,
 						'unit': '%'
 						}
-					}
-			}
-		},
-		{
-			// forest
-			'selector': 'div.bg2',
-			'properties': {
-				'x': {
-					'background-position-x': {
-					'initial': -80,
-					'multiplier': 0.018,
-					'invert': true,
-					'unit': '%'
-					}
-				},
-				'y': {
-					'background-position-y': {
-						'initial': 75,
-						'multiplier': 0.001,
-						'invert': false,
-						'unit': '%'
+					},
+					'y': {
+						'background-position-y': {
+							'initial': 140,
+							'multiplier': 0.00,
+							'invert': false,
+							'unit': '%'
+							}
 						}
-					}
-			}
-		},		
-		{
-			// cloud
-			'selector': 'div.bg1',
-			'properties': {
-				'x': {
-					'background-position-x': {
-					'initial': -20,
-					'multiplier': 0.022,
-					'invert': true,
-					'unit': '%'
-					}
-				},
-				'y': {
-					'background-position-y': {
-						'initial': 40,
+				}
+			},
+			{
+				// forest
+				'selector': 'div.bg2',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -120,
 						'multiplier': 0.01,
-						'invert': false,
+						'invert': true,
 						'unit': '%'
 						}
-					}
+					},
+					'y': {
+						'background-position-y': {
+							'initial': 80,
+							'multiplier': 0.001,
+							'invert': false,
+							'unit': '%'
+							}
+						}
+				}
+			},		
+			{
+				// cloud
+				'selector': 'div.bg1',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -40,
+						'multiplier': 0.018,
+						'invert': true,
+						'unit': '%'
+						}
+					},
+					'y': {
+						'background-position-y': {
+							'initial': 60,
+							'multiplier': 0.01,
+							'invert': false,
+							'unit': '%'
+							}
+						}
+				}
 			}
-		}
-	]
-});
+		]
+	});
+
 
 
 	// scroll Page
