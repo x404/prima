@@ -682,15 +682,6 @@ footer a {
   margin-top: 2rem;
 }
 
-@media (min-width: 1921px) {
-  .contacts #map {
-    margin-top: 5rem;
-  }
-  .social {
-    padding-top: 7rem;
-  }
-}
-
 /* =contacts
 ---------------------------*/
 #loginModal .modal-title {
@@ -988,6 +979,13 @@ footer a {
 .intro .buttons .btn:hover {
   background: none;
   color: #fff;
+}
+
+.intro .mouse {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 28px;
 }
 
 /* =about
@@ -1339,6 +1337,18 @@ figure.effect-bubba:hover p {
   background-position: 0 top, left 100% top;
 }
 
+@media (min-height: 1000px) {
+  .project-list.showbg {
+    background-position: 0 top, left 122% top;
+  }
+}
+
+@media (min-height: 1200px) {
+  .project-list.showbg {
+    background-position: -100% top, left 165% top;
+  }
+}
+
 .building-list .cell,
 .project-list .cell {
   text-transform: uppercase;
@@ -1466,8 +1476,42 @@ figure.effect-bubba:hover p {
   background-position: 0 top, left 100% top;
 }
 
+@media (min-height: 1000px) {
+  .building-list.showbg {
+    background-position: 0 top, left 122% top;
+  }
+}
+
+@media (min-height: 1200px) {
+  .building-list.showbg {
+    background-position: -100% top, left 165% top;
+  }
+}
+
 /* =/building-list
 ---------------------------*/
 ::-ms-clear {
   display: none;
+}
+
+@media (min-height: 1000px) {
+  .contacts #map {
+    margin-top: 5rem;
+    height: 420px;
+  }
+  .social {
+    padding-top: 7rem;
+  }
+}
+
+@media (min-height: 1200px) {
+  .contacts #map {
+    height: 550px;
+  }
+}
+
+@media (min-height: 1350px) {
+  .contacts #map {
+    height: 650px;
+  }
 }

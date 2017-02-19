@@ -127,7 +127,7 @@ $(document).ready(function(){
 					},
 					'y': {
 						'background-position-y': {
-							'initial': 60,
+							'initial': 45,
 							'multiplier': 0.01,
 							'invert': false,
 							'unit': '%'

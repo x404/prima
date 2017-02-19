@@ -74,6 +74,13 @@
 			}
 		}
 	}
+
+	.mouse{
+		position: absolute;
+		left: 50%;
+		margin-left: -10px;
+		bottom: 28px;
+	}
 }
 
 
@@ -354,10 +361,10 @@ figure.effect-bubba h4 {
 }
 
 @media (max-width: 1920px){
-figure.effect-bubba h4 {
-	-webkit-transform: translate3d(0,-12px,0);
-	transform: translate3d(0,-12px,0);
-}	
+	figure.effect-bubba h4 {
+		-webkit-transform: translate3d(0,-12px,0);
+		transform: translate3d(0,-12px,0);
+	}	
 }
 
 
@@ -396,6 +403,12 @@ figure.effect-bubba:hover p {
 	will-change: transform;
 	&.showbg{
 		background-position: 0 top, left 100% top;
+		@media (min-height: 1000px){
+			background-position: 0 top, left 122% top;
+		}
+		@media (min-height: 1200px){
+			background-position: -100% top, left 165% top;
+		}
 	}
 }	
 
@@ -499,6 +512,12 @@ figure.effect-bubba:hover p {
 	}
 	&.showbg{
 		background-position: 0 top, left 100% top;
+		@media (min-height: 1000px){
+			background-position: 0 top, left 122% top;
+		}
+		@media (min-height: 1200px){
+			background-position: -100% top, left 165% top;
+		}		
 	}
 }
 
