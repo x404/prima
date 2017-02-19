@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ru"><!-- InstanceBegin template="/Templates/articles.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -10,13 +10,13 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 
 <meta name="robots" content="noindex,nofollow" />
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Статьи</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
-<link rel="stylesheet" href="template/css/styles.css" />
-<link rel="stylesheet" href="template/css/jquery.fullPage.css" />
+<link rel="stylesheet" href="../template/css/styles.css" />
+<link rel="stylesheet" href="../template/css/jquery.fullPage.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js"><\/script>')</script>
@@ -34,25 +34,25 @@
 	<script type="text/javascript" src="js/selectivizr.js"></script>
 <![endif]-->
 
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body>
 	<!-- =header -->
 	<header class="header default">
 		<div class="container">
 			<div class="logo">
-				<a href="/" title=""><img src="template/images/logo.png" alt="Проектно-строительная компания Prima" /></a>
+				<a href="/" title=""><img src="../template/images/logo.png" alt="Проектно-строительная компания Prima" /></a>
 			</div>
 			<nav id="navbar">
 				<ul class="nav">
 					<li><a href="#section2" title="">О компании</a></li>
 					<li>
-						<a href="services.html" title="">Услуги</a>
+						<a href="../services.html" title="">Услуги</a>
 					</li>
 					<li><a href="#section4" title="">Проектирование</a></li>
 					<li><a href="#section5" title="">Строительство</a></li>
-					<li class="active"><a href="articles.html" title="">Статьи</a></li>
+					<li class="active"><a href="../articles.html" title="">Статьи</a></li>
 					<li><a href="#section6" title="">Контакты</a></li>
 				</ul>
 			</nav>
@@ -65,104 +65,7 @@
 	
 	<!-- =main -->
 	<div class="main">
-		<!-- InstanceBeginEditable name="EditRegion3" -->
-		<!-- =breadcrumbs -->
-		<div class="breadcrumbs">
-			<div class="container">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li class="active"><span>Статьи</span></li>
-				</ul>
-			</div>
-		</div>
-		<!-- =/breadcrumbs -->
-
-		<div class="container">
-			<h1 class="title">Статьи</h1>
-
-			<!-- =article-list -->
-			<section class="article_list">
-				<div class="article_list_cell">
-					<a href="article.html">
-						<div class="pic">
-							<img src="tmp/article-1.jpg" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Разрабатка эскизных намерения застройки земельного участка. </h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">05.02.2017</time>
-					</a>
-				</div>
-				<div class="article_list_cell">
-					<a href="article.html">
-						<div class="pic">
-							<img src="https://dummyimage.com/360x268/000/fff" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Стадии проектирования проекта</h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">03.02.2017</time>
-					</a>
-				</div>
-				<div class="article_list_cell">
-					<a href="#">
-						<div class="pic">
-							<img src="tmp/article-3.jpg" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Стадии проектирования проекта</h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">02.02.2017</time>
-					</a>
-				</div>
-				<div class="article_list_cell">
-					<a href="article.html">
-						<div class="pic">
-							<img src="http://lorempixel.com/360/268/city" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Разрабатка эскизных намерения застройки земельного участка. </h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">30.11.2016</time>
-					</a>
-				</div>
-				<div class="article_list_cell">
-					<a href="#">
-						<div class="pic">
-							<img src="http://lorempixel.com/360/268/abstract" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Стадии проектирования проекта</h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">12.10.2016</time>
-					</a>
-				</div>
-				<div class="article_list_cell">
-					<a href="#">
-						<div class="pic">
-							<img src="tmp/article-1.jpg" class="img-responsive" alt="" />
-						</div>
-						<hr />
-						<h3>Стадии проектирования проекта</h3>
-						<time class="date_pub" datetime="2017-01-13 11:26:19">08.09.2016</time>
-					</a>
-				</div>
-			</section>
-			<!-- =/article-list -->
-
-
-			<!-- =pagination -->
-			<div class="pagination text-center">
-				<ul>
-					<li class="prev"><a href="#"><</a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#" class="active">2</a></li>
-					<li><a href="#">3</a></li>
-					<li>...</li>
-					<li><a href="#">12</a></li>
-					<li><a href="#">13</a></li>
-					<li><a href="#">14</a></li>
-					<li class="next"><a href="#">></a></li>
-				</ul>
-			</div>
-			<!-- =/pagination -->
-		</div>
-		<!-- InstanceEndEditable -->
+		<!-- TemplateBeginEditable name="EditRegion3" -->EditRegion3<!-- TemplateEndEditable -->
 	</div>
 	<!-- =/main -->
 
@@ -201,11 +104,11 @@
 
 	<!-- =social -->
 	<div class="social">
-		<a href="#" target="_blank" class="sitemap" title="Карта сайта"><img src="template/images/sitemap-icon.png" alt="Карта сайта" /></a>
-		<a href="#" target="_blank" class="instagram" title="instagram"><img src="template/images/instagram-icon.png" alt="instagram" /></a>
-		<a href="#" target="_blank" class="email" title="Отправить быстрое сообщение"><img src="template/images/email.png" alt="Email" /></a>
-		<a href="https://www.facebook.com/psk.dnepr" target="_blank" class="facebook" title="facebook"><img src="template/images/facebook-icon.png" alt="facebook" /></a>
-		<a href="https://plus.google.com/u/0/b/110793198490451598502/+PskdneprUa2015/about" target="_blank" class="googleplus" title="googleplus"><img src="template/images/googleplus-icon.png" alt="googleplus" /></a>
+		<a href="#" target="_blank" class="sitemap" title="Карта сайта"><img src="../template/images/sitemap-icon.png" alt="Карта сайта" /></a>
+		<a href="#" target="_blank" class="instagram" title="instagram"><img src="../template/images/instagram-icon.png" alt="instagram" /></a>
+		<a href="#" target="_blank" class="email" title="Отправить быстрое сообщение"><img src="../template/images/email.png" alt="Email" /></a>
+		<a href="https://www.facebook.com/psk.dnepr" target="_blank" class="facebook" title="facebook"><img src="../template/images/facebook-icon.png" alt="facebook" /></a>
+		<a href="https://plus.google.com/u/0/b/110793198490451598502/+PskdneprUa2015/about" target="_blank" class="googleplus" title="googleplus"><img src="../template/images/googleplus-icon.png" alt="googleplus" /></a>
 		<div class="modal-email">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"></button>
 			<h4 class="modal-title">ОТПРАВИТЬ БЫСТРОЕ СООБЩЕНИЕ</h4>
@@ -275,11 +178,11 @@
 
 <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 <script>window.jQuery || document.write('<script src="../template/js/jquery.validate.min.js"><\/script>')</script>
-<script src="template/js/jquery.fullPage.min.js"></script>
-<script src="template/js/scrollspy.min.js"></script>
-<script src="template/js/modal.min.js"></script>
-<script src="template/js/jquery.parallax-0.2-min.js"></script>
-<script src="template/js/engine.js"></script>
+<script src="../template/js/jquery.fullPage.min.js"></script>
+<script src="../template/js/scrollspy.min.js"></script>
+<script src="../template/js/modal.min.js"></script>
+<script src="../template/js/jquery.parallax-0.2-min.js"></script>
+<script src="../template/js/engine.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJon0oRy7AYzbHfD1DO2oSOEDaVRDxzHU&callback=initMap"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>

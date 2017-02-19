@@ -10,8 +10,6 @@ $(document).ready(function(){
 		bigSectionsDestination : 'bottom',
 
 		onLeave: function(index, newIndex, direction){
-			// console.log(index);
-			console.log(newIndex);
 			if (newIndex == 3){
 				$('.services ul li').addClass('fadeIn animated');
 				$('.services .line > div').addClass('animated');
