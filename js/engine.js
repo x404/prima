@@ -41,19 +41,86 @@ $(document).ready(function(){
 $('body').parallax({
 	'elements': [
 		{
-			'selector': 'div.bg2',
+			// bushes
+			'selector': 'div.bg4',
 			'properties': {
 				'x': {
 					'background-position-x': {
-					'initial': -15,
-					'multiplier': 0.015,
+					'initial': -55,
+					'multiplier': 0.0018,
 					'invert': true,
 					'unit': '%'
 					}
 				},
 				'y': {
 					'background-position-y': {
-						'initial': 50,
+						'initial': 240,
+						'multiplier': 0.001,
+						'invert': false,
+						'unit': '%'
+						}
+					}
+			}
+		},	
+		{
+			// house
+			'selector': 'div.bg3',
+			'properties': {
+				'x': {
+					'background-position-x': {
+					'initial': -90,
+					'multiplier': 0.002,
+					'invert': true,
+					'unit': '%'
+					}
+				},
+				'y': {
+					'background-position-y': {
+						'initial': 170,
+						'multiplier': 0.004,
+						'invert': false,
+						'unit': '%'
+						}
+					}
+			}
+		},
+		{
+			// forest
+			'selector': 'div.bg2',
+			'properties': {
+				'x': {
+					'background-position-x': {
+					'initial': -80,
+					'multiplier': 0.018,
+					'invert': true,
+					'unit': '%'
+					}
+				},
+				'y': {
+					'background-position-y': {
+						'initial': 75,
+						'multiplier': 0.001,
+						'invert': false,
+						'unit': '%'
+						}
+					}
+			}
+		},		
+		{
+			// cloud
+			'selector': 'div.bg1',
+			'properties': {
+				'x': {
+					'background-position-x': {
+					'initial': -20,
+					'multiplier': 0.022,
+					'invert': true,
+					'unit': '%'
+					}
+				},
+				'y': {
+					'background-position-y': {
+						'initial': 40,
 						'multiplier': 0.01,
 						'invert': false,
 						'unit': '%'

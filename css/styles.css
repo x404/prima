@@ -902,7 +902,9 @@ footer a {
 }
 
 .intro .bg1,
-.intro .bg2 {
+.intro .bg2,
+.intro .bg3,
+.intro .bg4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -912,8 +914,20 @@ footer a {
   height: 100%;
 }
 
-.intro .bg2 {
+.intro .bg1 {
   background: url(../images/cloud.png) no-repeat center 50px;
+}
+
+.intro .bg2 {
+  background: url(../images/forest.png) no-repeat center 200px;
+}
+
+.intro .bg3 {
+  background: url(../images/house.png) no-repeat center 150px;
+}
+
+.intro .bg4 {
+  background: url(../images/bushes.png) no-repeat center 150px;
 }
 
 .intro .container {

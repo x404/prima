@@ -16,15 +16,29 @@
 	flex: 1;
 
 	.bg1,
-	.bg2{
+	.bg2,
+	.bg3,
+	.bg4{
 		@include flexbox;
 		flex: 1; 
 		height: 100%;
 	}
 
-	.bg2{
+
+	.bg1{
 		background: url(../images/cloud.png) no-repeat center 50px;
 	}
+	.bg2{
+		background: url(../images/forest.png) no-repeat center 200px;
+	}
+	
+	.bg3{
+		background: url(../images/house.png) no-repeat center 150px;
+	}
+	.bg4{
+		background: url(../images/bushes.png) no-repeat center 150px;
+	}
+
 	.container{
 		@include flexbox;
 		height: 100%;
