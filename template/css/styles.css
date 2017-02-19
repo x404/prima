@@ -223,7 +223,7 @@ label.error {
   display: none !important;
 }
 
-.bodyFixed .title {
+.bodyFixed #fullpage .title {
   padding-top: 8rem;
 }
 
@@ -360,8 +360,6 @@ header.fixed .login {
 /* =navigation
 ---------------------------*/
 /* =/navigation
----------------------------*/
-/* =main
 ---------------------------*/
 #map {
   height: 370px;
@@ -897,7 +895,7 @@ footer a {
 }
 
 .main {
-  padding-top: 133px;
+  padding-top: 140px;
 }
 
 /* =breadcrumbs

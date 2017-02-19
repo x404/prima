@@ -172,7 +172,7 @@ label.error{
 }
 
 .bodyFixed{
-	.title{
+	#fullpage .title{
 		padding-top: 8rem;
 	}
 }
@@ -314,15 +314,6 @@ header.fixed{
 ---------------------------*/
 /* =/navigation
 ---------------------------*/
-
-
-
-/* =main
----------------------------*/
-.main{
-	aside{
-	}
-}
 
 
 #map{
@@ -793,7 +784,7 @@ button.close {
 
 // 
 .main{
-	padding-top: 133px;
+	padding-top: 140px;
 }
 
 
