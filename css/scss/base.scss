@@ -338,6 +338,7 @@ header.fixed{
 	@include align-items(center);
 	position: relative;
 	padding-top: 4rem;
+	min-height: 13rem;
 	a{
 		display: block;
 		overflow: hidden;
@@ -494,6 +495,7 @@ footer{
 	@include font-size(1.4);
 	color: $color4;
 	margin-top: 3.3rem;
+	padding-bottom: 4rem;
 	text-align: center;
 	.container{
 		border-top: 1px solid $color4;
@@ -502,6 +504,15 @@ footer{
 	a{
 		@extend .tdn;
 		color: $color4;
+	}
+}
+
+#section6{
+	.social{
+		min-height: 0; 
+	}
+	footer{
+		padding-bottom: 0;
 	}
 }
 /* =footer
@@ -593,7 +604,7 @@ footer{
 	}
 
 	#map{
-		height: 370px;
+		height: 390px;
 		margin-top: 2rem;
 	}
 }

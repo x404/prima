@@ -388,6 +388,7 @@ header.fixed .login {
   align-items: center;
   position: relative;
   padding-top: 4rem;
+  min-height: 13rem;
 }
 
 .social a {
@@ -569,6 +570,7 @@ footer {
   font-size: 1.4rem;
   color: #30445d;
   margin-top: 3.3rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -579,6 +581,14 @@ footer .container {
 
 footer a {
   color: #30445d;
+}
+
+#section6 .social {
+  min-height: 0;
+}
+
+#section6 footer {
+  padding-bottom: 0;
 }
 
 /* =footer
@@ -688,7 +698,7 @@ footer a {
 }
 
 .contacts #map {
-  height: 370px;
+  height: 390px;
   margin-top: 2rem;
 }
 
@@ -1721,7 +1731,7 @@ figure.effect-bubba:hover p {
   -moz-align-items: center;
   align-items: center;
   flex: 1;
-  min-height: 14rem;
+  min-height: 10rem;
 }
 
 .article_list_cell .date_pub {
