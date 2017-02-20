@@ -63,18 +63,155 @@
 			min-height: 10rem; 
 		}
 
+	}
+}
+.date_pub{
+	@include font-size(1.4);
+	color: $color6;
+	margin-top: 1.5rem;
+	position: relative;
+	padding-left: 28px;
+	&:before{
+		@extend .before;
+		@include sprite(-58px, 0);
+		// left: -28px;
+		left: 0;
+		// padding-left: 28px;
+		top: 0px;
+		height: 20px;
+		width: 19px;
+	}
+}
+
+
+.page{
+	padding-bottom: 4rem;
+	h1{
+		@include font-size(3);
+		line-height: 1.2;
+	}
+	h2{
+		@include font-size(2.4);
+		line-height: 1.2;
+	}	
+	@include flexbox;
+	margin-top: 3.7rem;
+	main{
+		width: 750px;
+		.meta{
+			margin-bottom: 2.3rem;
+		}
+		.pic{
+			img{
+				@extend .img-responsive;
+				@include rounded(5px 5px 0 0)
+				vertical-align: top;
+
+			}
+		}
+		.head{
+			background-color: $color5;
+			padding: 2.7rem 2.2rem;
+		}
 		.date_pub{
-			@include font-size(1.4);
-			color: $color6;
-			margin-top: 1.5rem;
-			position: relative;
-			&:before{
-				@extend .before;
-				@include sprite(-58px, 0);
-				left: -28px;
-				top: 0px;
-				height: 20px;
-				width: 19px;
+			// margin-left: 2.5rem;
+			margin-top: 2.5rem;
+		}
+		p:not(.date_pub){
+			// margin: 3rem 0;
+		}
+		ul{
+			li{
+				padding-left: 3.5rem;
+				position: relative;
+				margin: 1.5rem 0;
+				&:before{
+					@extend .before;
+					@include rounded(50%)
+					height: 5px;
+					width: 5px;
+					background-color: $color3;
+					left: 20px;
+					top: 12px;
+				}
+			}
+		}
+	}
+	aside{
+		margin-left: 3rem;
+		width: 36rem;
+		ul{
+			li{
+				border-bottom: 1px solid #e9e9e7;
+				position: relative;
+				&:last-child{
+					border-bottom: none;
+				}
+				&.active{
+					background-color: $color5;
+					color: $color4;
+					.pic{
+						position: relative;
+						&:before{
+							@extend .before;
+							@include rounded(.5rem);
+							background-color: rgba(48, 68, 93, .25);
+							height: 100%;
+							width: 100%;
+							z-index: 99;
+						}
+						img{
+							@include rounded(.5rem);
+							border-color: $color4;
+						}
+					}					
+				}
+				a{
+					@include flexbox;
+					@include align-items(center);
+					@include font-size(1.4);
+					text-decoration: none;
+					padding: 1.5rem 1rem;
+					@include transition;
+					&:hover{
+						background-color: $color5;
+						color: $color4;
+						.pic{
+							position: relative;
+							&:before{
+								@extend .before;
+								@include rounded(.5rem);
+								background-color: rgba(48, 68, 93, .25);
+								height: 100%;
+								width: 100%;
+								z-index: 99;
+							}
+							img{
+								border-color: $color4;
+								@include rounded(.5rem);
+							}
+						}
+					}
+				}
+				.pic{
+					margin-right: 1.5rem;
+					img{
+						display: block;
+						border: 3px solid $color7;
+						@include rounded(.5rem);
+						@include transition-param(border-color);
+					}
+				}
+				.date_pub{
+					display: block;
+					margin-top: 1.5rem;
+				}
+
+				&:first-child{
+					a{
+						// padding-top: 0;
+					}
+				}
 			}
 		}
 	}

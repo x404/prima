@@ -182,6 +182,10 @@
 <script src="../template/js/scrollspy.min.js"></script>
 <script src="../template/js/modal.min.js"></script>
 <script src="../template/js/jquery.parallax-0.2-min.js"></script>
+
+<link rel="stylesheet" href="../template/css/highslide.css" property="stylesheet"/>
+<script src="../template/js/highslide-full.packed.js"></script>
+
 <script src="../template/js/engine.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJon0oRy7AYzbHfD1DO2oSOEDaVRDxzHU&callback=initMap"></script>
 </body>

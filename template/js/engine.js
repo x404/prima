@@ -1,5 +1,21 @@
 $(document).ready(function(){
-	// $('.fadeIn').css("opacity", "0");
+
+
+	hs.graphicsDir = '/template/images/graphics/';
+	hs.align = 'center';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.outlineType = 'rounded-white';
+	hs.fadeInOut = true;
+	hs.creditsText = '';
+	hs.loadingText = 'Загрузка';
+	hs.restoreTitle = '';
+
+	$('.lightbox').click(function(e){
+		e.preventDefault();
+		hs.align = "auto";
+		hs.expand(this);
+	});
+
 
 	$('#fullpage').fullpage({
 		responsiveWidth : 770,
