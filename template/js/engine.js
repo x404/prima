@@ -248,6 +248,31 @@ $(document).ready(function(){
 		}
 	});	
 
+
+
+	// validation
+	$('#feedback-form .submit').click(function(){
+		$('#feedback-form').submit();
+		return false;
+	});
+
+	errorTxt = 'Ошибка отправки';
+	thankTxt = '<div class="thank"> Ваше сообщение успешно отправлено </div>';
+	$('#feedback-form').validate({
+		submitHandler: function(form){
+			strSubmit=$(form).serialize();
+			$.ajax({type: 'POST',url: '/ajax/callback.ajax.php',data: strSubmit,
+				success: function(){
+					$('.feedback').append(thankTxt);
+					startClock('feedback-form');
+				}
+			}).fail(function(error){
+				alert(errorTxt)
+			});
+		}
+	});	
+
+
 });
 
 
@@ -263,6 +288,13 @@ function showTime(form){
 				$('.thank').remove();
 				$('.modal-email').removeClass('show');
 				$('.social .email').removeClass('active');
+			})
+		}
+
+		if (form == 'feedback-form'){ 
+			$('.thank').fadeOut('normal', function(){
+				$('.thank').remove();
+				$('#feedback-form .form-control').val('');
 			})
 		}
 	}

@@ -615,7 +615,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .contacts_info_field a { text-decoration: none; }
 
-.feedback { margin: 8.7rem 0 5rem; }
+.feedback { margin: 8.7rem 0 5rem; position: relative; }
 
 .feedback .head { font-size: 24px; font-size: 2.4rem; padding-bottom: 1.7rem; }
 
@@ -628,6 +628,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 .feedback textarea.form-control { height: 12rem; padding-top: 1rem; width: 100%; }
 
 .feedback .submit { margin-top: 2.5rem; }
+
+.feedback .thank { background-color: #fff; text-align: center; position: absolute; width: 100%; height: 300px; padding-top: 120px; bottom: 0; left: 0; }
 
 ::-ms-clear { display: none; }
 
