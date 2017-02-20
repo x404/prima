@@ -667,9 +667,9 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .gallery { margin-top: 4rem; margin-bottom: 2rem; display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; -ms-flex-direction: column; -webkit-flex-flow: row wrap; flex-flow: row wrap; }
 
-.gallery div { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; width: 200px; }
+.gallery a { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; width: 200px; }
 
-.gallery div img { height: 100%; vertical-align: top; width: 100%; }
+.gallery a img { height: 100%; vertical-align: top; width: 100%; }
 
 ::-ms-clear { display: none; }
 

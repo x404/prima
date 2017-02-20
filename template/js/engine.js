@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$('#lightgallery').lightGallery(); 
+
 
 	hs.graphicsDir = '/template/images/graphics/';
 	hs.align = 'center';
