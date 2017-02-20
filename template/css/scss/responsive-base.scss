@@ -18,8 +18,65 @@
 	}
 }
 
+@media (max-height: 830px){
+	.building-list,
+	.project-list{
+		figure{
+			max-height: 270px
+		}
+		.flexbox .cell{
+			max-height: 270px;
+		}
+	}
 
-@media (max-width: 1199px){
+	.building-list, .project-list{
+		figure.effect-bubba h4{
+			padding-top: 20%;
+		}
+	}
+
+	.contacts #map{
+		height: 240px;
+	}
+}
+
+@media (max-width: 1280px) and (max-height: 1000px){
+	.intro{
+		background: url(../images/bg-1.jpg) no-repeat center center / cover;
+		.bg1,
+		.bg2,
+		.bg3,
+		.bg4{
+			background: none !important;
+		}
+	}
+
+	.callme,
+	#up
+	{
+		right: 25px;
+	}
+}
+
+@media (max-width: 1280px) and (max-height: 800px){
+	.contacts #map{
+		height: 350px;
+	}
+
+	#section6 footer{
+		padding-bottom: 3rem;
+	}
+}
+
+@media (max-width: 1100px){
+
+	.fp-section,
+	.fp-tableCell{
+		height: auto !important;
+	}
+	.section .fp-tableCell{
+		display: block;
+	}
 }
 
 @media (max-width: 1024px){
@@ -29,7 +86,60 @@
 }
 
 @media (max-width: 767px){
+	.callme,
+	#up{
+		display: none !important;
+	}
 }
 
 @media (max-width: 545px){
+}
+
+
+
+@media (max-width: 450px){
+	.social{
+		@include flex-direction(column);
+
+		a{
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.intro .buttons .btn{
+		min-width: 0;
+		margin: 0;
+	}
+
+	.social .modal-email{
+		bottom: 26.5rem;
+	}
+}
+
+
+@media (max-width: 400px){
+	.title{
+		@include font-size(3);		
+	}
+
+	.about .text{
+		text-align: justify;
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+
+	}
+	
+	.intro{
+		.text{
+			@include font-size(2);
+		}
+
+		.buttons .btn{
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
 }

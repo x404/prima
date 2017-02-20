@@ -20,7 +20,8 @@ $(document).ready(function(){
 
 
 	$('#fullpage').fullpage({
-		responsiveWidth : 770,
+		responsiveWidth : 1024,
+		responsiveHeight: 1020,
 		autoScrolling : true,
 		fitToSection : false,
 		scrollBar : true,

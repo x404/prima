@@ -446,7 +446,6 @@ figure.effect-bubba:hover p {
 	}
 
 	figure {
-		// @include rounded(4px);
 		background: #3085a3 none repeat scroll 0 0;
 		cursor: pointer;
 		display: block;
@@ -468,7 +467,7 @@ figure.effect-bubba:hover p {
 	figure figcaption {
 		backface-visibility: hidden;
 		color: #fff;
-		padding: 1.8rem;
+		padding: 1.8rem 4rem;
 		text-transform: uppercase;
 	}
 
