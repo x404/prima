@@ -39,14 +39,14 @@
 			</div>
 			<nav id="navbar">
 				<ul class="nav">
-					<li><a href="#section2" title="">О компании</a></li>
+					<li><a href="homepage.html#section2" title="">О компании</a></li>
 					<li>
 						<a href="../services.html" title="">Услуги</a>
 					</li>
-					<li><a href="#section4" title="">Проектирование</a></li>
-					<li><a href="#section5" title="">Строительство</a></li>
+					<li><a href="homepage.html#section4" title="">Проектирование</a></li>
+					<li><a href="homepage.html#section5" title="">Строительство</a></li>
 					<li class="active"><a href="../articles.html" title="">Статьи</a></li>
-					<li><a href="#section6" title="">Контакты</a></li>
+					<li><a href="contacts.html" title="">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="login">
