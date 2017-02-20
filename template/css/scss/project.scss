@@ -1,11 +1,10 @@
 .gallery{
 	margin-top: 4rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	@include flexbox;
-	-ms-flex-wrap: wrap;
 	-ms-flex-direction: column;
-	-webkit-flex-flow: row wrap; 
-	flex-flow: row wrap;
+	@include flex-wrap;
+	@include flex-flow(row wrap)
 	a{
 		-webkit-box-flex: auto;
 		-ms-flex: auto;
