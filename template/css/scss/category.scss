@@ -12,12 +12,11 @@
 		.cell{
 			margin-top: 3.2rem;
 			margin-right: 2.8rem;
-			width: 263px;
+			width: 360px;
 
-			&:nth-child(4n){
+			&:nth-child(3n){
 				margin-right: 0;
 			}
-
 
 			h4{
 				text-transform: none;
@@ -29,9 +28,20 @@
 			}
 
 			figure{
-				@include rounded(6px);
+				border: 1px solid $color2;
+				overflow: hidden;
+				background-color: transparent;
+				cursor: pointer;
+				display: block;
+				max-height: 230px;
+				min-width: 0;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				width: 100%;
+
 				img{
-					@include rounded(6px);
+					width: 100%;
 				}
 				&:before{
 					@extend .before;
@@ -45,66 +55,56 @@
 			}
 
 
-figure.effect-bubba h4{
-	padding-top: 21%;
-}
+			figure.effect-bubba h4{
+				padding-top: 28%;
+			}
 
-figure.effect-bubba:hover img {
-	opacity: 1;
-}
-
-
-figure.effect-bubba figcaption::before {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-}
-
-figure.effect-bubba figcaption::after {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-}
+			figure.effect-bubba:hover img {
+				opacity: 1;
+			}
 
 
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after{
-	left: 18px;
-	right: 18px;
-	top: 15px;
-	bottom: 15px;
-}
+			figure.effect-bubba figcaption::before {
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+			}
 
-	figure {
-		// @include rounded(8px);
-		border: 1px solid $color2;
-		overflow: hidden;
-		background-color: transparent;
-		cursor: pointer;
-		display: block;
-		max-height: 180px;
-		min-width: 0;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-		width: 100%;
-	}
+			figure.effect-bubba figcaption::after {
+				border-right: 1px solid #fff;
+				border-left: 1px solid #fff;
+			}
 
-	figure figcaption, figure figcaption > a {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 10;
-	}
-	figure figcaption {
-		backface-visibility: hidden;
-		color: #fff;
-		padding: 1.8rem;
-		text-transform: uppercase;
-		p{
-			@include font-size(1.6);
-		}
-	}
+
+			figure.effect-bubba figcaption::before,
+			figure.effect-bubba figcaption::after{
+				left: 18px;
+				right: 18px;
+				top: 15px;
+				bottom: 15px;
+			}
+
+			figure {
+				// @include rounded(8px);
+
+			}
+
+			figure figcaption, figure figcaption > a {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 10;
+			}
+			figure figcaption {
+				backface-visibility: hidden;
+				color: #fff;
+				padding: 1.8rem;
+				text-transform: uppercase;
+				p{
+					@include font-size(1.6);
+				}
+			}
 
 
 		}

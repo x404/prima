@@ -454,11 +454,11 @@ footer a { color: #30445d; }
 /*---------------*/
 figure.effect-bubba { background: #9e5406; }
 
-figure.effect-bubba img { -webkit-border-radius: 4px; border-radius: 4px; -webkit-transition: opacity 0.35s; transition: transform 0.35s; }
+figure.effect-bubba img { -webkit-transition: opacity 0.35s; transition: transform 0.35s; }
 
 figure.effect-bubba:hover img { opacity: 0.7; transform: scale(1.1); }
 
-figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after { position: absolute; top: 30px; right: 30px; bottom: 30px; left: 30px; content: ''; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after { bottom: 30px; content: ''; left: 30px; opacity: 0; position: absolute; right: 30px; top: 30px; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
 
 figure.effect-bubba figcaption::before { border-top: 2px solid #fff; border-bottom: 2px solid #fff; -webkit-transform: scale(0, 1); transform: scale(0, 1); }
 
@@ -494,7 +494,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .building-list .flexbox .cell img, .project-list .flexbox .cell img { max-width: 100; margin-top: -39px; vertical-align: top; }
 
-.building-list figure, .project-list figure { -webkit-border-radius: 4px; border-radius: 4px; background: #3085a3 none repeat scroll 0 0; cursor: pointer; display: block; max-height: 360px; min-width: 320px; overflow: hidden; position: relative; text-align: center; width: 100%; }
+.building-list figure, .project-list figure { background: #3085a3 none repeat scroll 0 0; cursor: pointer; display: block; max-height: 360px; min-width: 320px; overflow: hidden; position: relative; text-align: center; width: 100%; }
 
 .building-list figure figcaption, .building-list figure figcaption > a, .project-list figure figcaption, .project-list figure figcaption > a { height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
@@ -635,21 +635,21 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .category-list { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; margin-bottom: 5rem; }
 
-.category-list .cell { margin-top: 3.2rem; margin-right: 2.8rem; width: 263px; }
+.category-list .cell { margin-top: 3.2rem; margin-right: 2.8rem; width: 360px; }
 
-.category-list .cell:nth-child(4n) { margin-right: 0; }
+.category-list .cell:nth-child(3n) { margin-right: 0; }
 
 .category-list .cell h4 { text-transform: none; font-size: 18px; font-size: 1.8rem; }
 
 .category-list .cell p { text-transform: none; }
 
-.category-list .cell figure { -webkit-border-radius: 6px; border-radius: 6px; }
+.category-list .cell figure { border: 1px solid #fff; overflow: hidden; background-color: transparent; cursor: pointer; display: block; max-height: 230px; min-width: 0; overflow: hidden; position: relative; text-align: center; width: 100%; }
 
-.category-list .cell figure img { -webkit-border-radius: 6px; border-radius: 6px; }
+.category-list .cell figure img { width: 100%; }
 
 .category-list .cell figure:before { background-color: rgba(48, 68, 93, 0.5); height: 100%; left: 0; top: 0; width: 100%; z-index: 5; }
 
-.category-list .cell figure.effect-bubba h4 { padding-top: 21%; }
+.category-list .cell figure.effect-bubba h4 { padding-top: 28%; }
 
 .category-list .cell figure.effect-bubba:hover img { opacity: 1; }
 
@@ -659,13 +659,17 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .category-list .cell figure.effect-bubba figcaption::before, .category-list .cell figure.effect-bubba figcaption::after { left: 18px; right: 18px; top: 15px; bottom: 15px; }
 
-.category-list .cell figure { border: 1px solid #fff; overflow: hidden; background-color: transparent; cursor: pointer; display: block; max-height: 180px; min-width: 0; overflow: hidden; position: relative; text-align: center; width: 100%; }
-
 .category-list .cell figure figcaption, .category-list .cell figure figcaption > a { height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 10; }
 
 .category-list .cell figure figcaption { backface-visibility: hidden; color: #fff; padding: 1.8rem; text-transform: uppercase; }
 
 .category-list .cell figure figcaption p { font-size: 16px; font-size: 1.6rem; }
+
+.gallery { margin-top: 4rem; margin-bottom: 2rem; display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; -ms-flex-direction: column; -webkit-flex-flow: row wrap; flex-flow: row wrap; }
+
+.gallery div { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; width: 200px; }
+
+.gallery div img { height: 100%; vertical-align: top; width: 100%; }
 
 ::-ms-clear { display: none; }
 

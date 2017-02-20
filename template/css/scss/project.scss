@@ -1,0 +1,21 @@
+.gallery{
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	@include flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: column;
+	-webkit-flex-flow: row wrap; 
+	flex-flow: row wrap;
+	div{
+		-webkit-box-flex: auto;
+		-ms-flex: auto;
+		flex: auto; 
+		margin: 2px; 
+		width: 200px; 
+		img{
+			height: 100%; 
+			vertical-align: top;
+			width: 100%; 
+		}
+	}
+}
