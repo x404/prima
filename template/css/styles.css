@@ -603,6 +603,32 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .page aside ul li .date_pub { display: block; margin-top: 1.5rem; }
 
+.contacts_info { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; padding-top: 2.4rem; }
+
+.contacts_info .pic { height: 75px; }
+
+.contacts_info img { vertical-align: bottom; }
+
+.contacts_info_title { color: #ef4129; margin: 2.1rem 0 .5rem; }
+
+.contacts_info_field { height: 7rem; display: table-cell; vertical-align: middle; }
+
+.contacts_info_field a { text-decoration: none; }
+
+.feedback { margin: 8.7rem 0 5rem; }
+
+.feedback .head { font-size: 24px; font-size: 2.4rem; padding-bottom: 1.7rem; }
+
+.feedback form .row { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; }
+
+.feedback form .row .form-control { width: 49%; }
+
+.feedback .form-control { font-size: 18px; font-size: 1.8rem; -webkit-border-radius: 5px; border-radius: 5px; border: 3px solid #30445d; height: 4.8rem; margin-top: 3rem; padding-left: 2rem; padding-right: 2rem; }
+
+.feedback textarea.form-control { height: 12rem; padding-top: 1rem; width: 100%; }
+
+.feedback .submit { margin-top: 2.5rem; }
+
 ::-ms-clear { display: none; }
 
 @media (min-height: 1000px) { .contacts #map { margin-top: 5rem; height: 420px; }
