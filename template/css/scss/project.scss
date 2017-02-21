@@ -3,7 +3,6 @@
 	margin-bottom: 4rem;
 	@include flexbox;
 	-ms-flex-direction: column;
-	// @include flex-wrap;
 	@include flex-flow(row wrap);
 	a{
 		-webkit-box-flex: auto;

@@ -78,9 +78,7 @@
 	&:before{
 		@extend .before;
 		@include sprite(-58px, 0);
-		// left: -28px;
 		left: 0;
-		// padding-left: 28px;
 		top: 0px;
 		height: 20px;
 		width: 19px;
@@ -110,7 +108,6 @@
 				@extend .img-responsive;
 				@include rounded(5px 5px 0 0)
 				vertical-align: top;
-
 			}
 		}
 		.head{
@@ -118,11 +115,7 @@
 			padding: 2.7rem 2.2rem;
 		}
 		.date_pub{
-			// margin-left: 2.5rem;
 			margin-top: 2.5rem;
-		}
-		p:not(.date_pub){
-			// margin: 3rem 0;
 		}
 		ul{
 			li{
@@ -209,12 +202,6 @@
 				.date_pub{
 					display: block;
 					margin-top: 1.5rem;
-				}
-
-				&:first-child{
-					a{
-						// padding-top: 0;
-					}
 				}
 			}
 		}

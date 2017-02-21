@@ -233,15 +233,15 @@ footer a { color: #30445d; }
 ---------------------------*/
 #up { -webkit-border-radius: 50%; border-radius: 50%; background: #30445d; border: 3px solid #30445d; bottom: 50px; display: none; height: 7rem; position: fixed; right: 55px; transition: background-color .3s; width: 7rem; }
 
-#up:before { background-image: url(../images/sprite.png); background-repeat: no-repeat; background-position: 0 -41px; height: 17px; width: 28px; left: 50%; margin-left: -14px; top: 50%; margin-top: -8px; }
+#up:before { background-image: url(../images/sprite.png); background-repeat: no-repeat; background-position: 0 -41px; height: 17px; left: 50%; margin-left: -14px; margin-top: -8px; top: 50%; width: 28px; }
 
 #up:hover { background-color: #fff; }
 
 #up:hover:before { background-position: -29px -41px; }
 
-.callme { font-size: 17px; font-size: 1.7rem; -webkit-border-radius: 7rem; border-radius: 7rem; background-color: #ef4129; bottom: 150px; color: #fff; cursor: pointer; height: 7rem; position: fixed; right: 55px; width: 7rem; transition: width .3s; overflow: hidden; }
+.callme { font-size: 17px; font-size: 1.7rem; -webkit-border-radius: 7rem; border-radius: 7rem; background-color: #ef4129; bottom: 150px; color: #fff; cursor: pointer; height: 7rem; overflow: hidden; position: fixed; right: 55px; transition: width .3s; width: 7rem; }
 
-.callme:before { background-image: url(../images/sprite.png); background-repeat: no-repeat; background-position: -45px -58px; height: 32px; width: 32px; left: 50%; top: 50%; margin-left: -16px; margin-top: -16px; }
+.callme:before { background-image: url(../images/sprite.png); background-repeat: no-repeat; background-position: -45px -58px; height: 32px; left: 50%; margin-left: -16px; margin-top: -16px; top: 50%; width: 32px; }
 
 .callme.expand { padding-left: 87px; padding-right: 30px; width: 38rem; }
 
@@ -259,7 +259,7 @@ footer a { color: #30445d; }
 
 /* =contacts
 ---------------------------*/
-#loginModal .modal-title { display: inline-block; position: relative; margin-left: 3rem; }
+#loginModal .modal-title { display: inline-block; margin-left: 3rem; position: relative; }
 
 #loginModal .modal-title:before { background-image: url(../images/sprite.png); background-repeat: no-repeat; background-position: 0 0; width: 25px; height: 20px; top: 8px; left: -43px; }
 
@@ -518,8 +518,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .building-list figure figcaption, .project-list figure figcaption { backface-visibility: hidden; color: #fff; padding: 1.8rem 4rem; text-transform: uppercase; }
 
-@media (max-width: 1920px) { .building-list .title, .project-list .title { /* padding-top: 5rem; */ }
-  .building-list .flexbox .cell, .project-list .flexbox .cell { height: 320px; }
+@media (max-width: 1920px) { .building-list .flexbox .cell, .project-list .flexbox .cell { height: 320px; }
   .building-list figure, .project-list figure { max-height: 320px; }
   .building-list figure.effect-bubba h4, .project-list figure.effect-bubba h4 { padding-top: 26%; } }
 
@@ -649,7 +648,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .feedback .submit { margin-top: 2.5rem; }
 
-.feedback .thank { background-color: #fff; text-align: center; position: absolute; width: 100%; height: 300px; padding-top: 120px; bottom: 0; left: 0; }
+.feedback .thank { background-color: #fff; bottom: 0; height: 300px; left: 0; padding-top: 120px; position: absolute; text-align: center; width: 100%; }
 
 .category main { margin-top: 3rem; margin-bottom: 1rem; }
 

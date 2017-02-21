@@ -56,8 +56,6 @@ html, body{
 	//ie11
 }
 
-
-
 .navbar-toggle{
 	display: none;
 }
@@ -74,7 +72,6 @@ input::-moz-focus-inner{
 }
 
 /*** standart classes *****/
-p{}
 a{color:#020000}
 h1{@include font-size(3.6); font-weight: normal;}
 h2{font-size:2.4rem; font-weight: normal;}
@@ -564,11 +561,11 @@ footer{
 		@extend .before;
 		@include sprite(0, -41px);
 		height: 17px;
-		width: 28px;
 		left: 50%;
 		margin-left: -14px;
-		top: 50%;
 		margin-top: -8px;
+		top: 50%;
+		width: 28px;
 	}
 	&:hover{
 		&:before{
@@ -587,20 +584,20 @@ footer{
 	color: $color2;
 	cursor: pointer;
 	height: 7rem;
+	overflow: hidden;
 	position: fixed;
 	right: 55px;
-	width: 7rem;
 	transition: width .3s;
-	overflow: hidden;
+	width: 7rem;
 	&:before{
 		@extend .before;
 		@include sprite(-45px, -58px);
 		height: 32px;
-		width: 32px;
 		left: 50%;
-		top: 50%;
 		margin-left: -16px;
 		margin-top: -16px;
+		top: 50%;
+		width: 32px;
 	}
 	&.expand{
 		padding-left: 87px;
@@ -646,8 +643,8 @@ footer{
 #loginModal{
 	.modal-title{
 		display: inline-block;
-		position: relative;
 		margin-left: 3rem;
+		position: relative;
 		&:before{
 			@extend .before;
 			@include sprite(0,0);
@@ -674,7 +671,6 @@ footer{
 	-webkit-overflow-scrolling: touch;
 	outline: 0;
 	padding-right: 0 !important;
-
 	label{
 		color: $color2;
 		display: block;
@@ -818,7 +814,6 @@ button.close {
 .modal-footer:after {
 	clear: both;
 }
-
 
 
 // 
