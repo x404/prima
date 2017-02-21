@@ -683,11 +683,11 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .gallery a img { height: 100%; vertical-align: top; width: 100%; -webkit-transition: transform 0.2s ease-out; transition: transform 0.2s ease-out; }
 
-.gallery a:before { -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; height: 100%; left: 0; top: 0; width: 100%; z-index: 10; }
+.gallery a:before { -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; height: 100%; left: 0; top: 0; width: 100%; z-index: 10; background: url(../images/zoom.png) no-repeat center center; opacity: 0; }
 
 .gallery a:hover img { transform: scale(1.1); }
 
-.gallery a:hover:before { background-color: rgba(48, 68, 93, 0.25); }
+.gallery a:hover:before { opacity: 1; background-color: rgba(48, 68, 93, 0.25); }
 
 ::-ms-clear { display: none; }
 
