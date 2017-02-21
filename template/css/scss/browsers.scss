@@ -15,9 +15,8 @@ _::-webkit-:host:not(:root:root), .intro{
 
 
 _::-webkit-:host:not(:root:root), .intro .container{
-	height: 800px;
 	display: block;
-
+	height: 800px;
 }
 
 _::-webkit-:host:not(:root:root), .intro .text{
@@ -37,5 +36,15 @@ _::-webkit-:host:not(:root:root), .project-list{
 _::-webkit-:host:not(:root:root), .building-list{
 	.container{
 		padding-bottom: 5rem;
+	}
+}
+
+
+@media (max-width: 600px){
+	_::-webkit-:host:not(:root:root), .intro .text{
+		margin-top: 20px;
+	}
+	_::-webkit-:host:not(:root:root), .intro .container{
+		height: auto;
 	}
 }

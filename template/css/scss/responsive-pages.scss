@@ -206,9 +206,6 @@
 		main{
 			width: 70%;
 		}
-		aside{
-			// width: 30%;
-		}
 	}	
 }
 
@@ -217,6 +214,8 @@
 	.intro{
 		.text{
 			width: 90%;
+			margin-left: auto;
+			margin-right: auto;	
 		}
 		.buttons .btn{
 			margin-bottom: 1rem;
@@ -389,9 +388,17 @@
 }
 
 @media (max-width: 450px){
-	.intro .buttons .btn{
-		min-width: 0;
-		margin: 0;
+	.intro{
+		padding-top: 3rem;
+		.text{
+			display: block;
+		}
+		.buttons .btn{
+			min-width: 0;
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 }
 
