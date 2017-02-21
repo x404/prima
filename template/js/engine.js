@@ -50,6 +50,8 @@ $(document).ready(function(){
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
+				$('body').removeClass('o-menu');
+				$('#navbar').css('height', 'auto');
 				$('html,body').animate({
 					scrollTop: target.offset().top
 				}, 1000, function() {
@@ -57,6 +59,14 @@ $(document).ready(function(){
 		        });
 				return false;
 			}
+		}
+	});
+
+
+	$(window).resize(function(){
+		if ($('body').width() > 630) {
+			$('body').removeClass('o-menu');
+			$('#navbar').css('height', 'auto');
 		}
 	});
 

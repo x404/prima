@@ -160,6 +160,13 @@
 		}
 	}
 
+	.header.fixed{
+		box-shadow: none;
+		nav{
+			padding-top: 1.4rem;
+		}
+	}
+
 	.navbar-toggle{
 		@include transition-param(background-color);
 		background-color: $color4;
@@ -296,14 +303,16 @@
 @media (max-width: 450px){
 	.social{
 		display: block;
-		min-height: inherit;
-		padding-top: 2rem;
+		min-height: initial;
+		padding-top: 0;
 		text-align: center;
 		a{
-			margin: 3rem auto !important;
+			display: inline-block;
+			margin: 3rem 1.2rem !important;
+			vertical-align: middle;
 		}
 		.modal-email{
-			bottom: 26.5rem;
+			bottom: 15.5rem;
 		}
 	}
 
@@ -328,6 +337,14 @@
 	}
 }
 
+@media (max-width: 350px){
+	.social{
+		a{
+			margin: 3rem .8rem !important;
+		}
+	}
+}
+
 @media (max-width: 320px){
 	.header{
 		.logo{
@@ -338,7 +355,9 @@
 		padding-bottom: 0;
 	}
 
-	.social .modal-email{
-		bottom: 22rem;
+	.social{
+		a{
+			margin: 3rem .9rem !important;
+		}
 	}
 }
