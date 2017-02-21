@@ -235,6 +235,12 @@
 	}
 }
 
+@media (max-width: 630px){
+	.main{
+		padding-top: 0;
+	}
+}
+
 @media (max-width: 575px){
 	.social .modal-email{
 		width: 95%;

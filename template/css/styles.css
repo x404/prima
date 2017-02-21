@@ -729,6 +729,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .navbar-toggle .icon-bar { display: block; height: 2px; width: 30px; background-color: #fff; margin: 8px auto; }
   .navbar-toggle:hover { background-color: #ef4129; }
   .header { height: 70px !important; padding-top: .8rem; }
+  .header .container { height: 70px; }
   .header nav { -webkit-transition: transform 0.2s ease-out; transition: transform 0.2s ease-out; }
   .header .logo { padding-left: 70px; }
   .header .logo img { width: 105px !important; }
@@ -741,10 +742,12 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .header nav > ul li { border-bottom: 1px solid #49505a; }
   .header nav > ul li a { font-weight: bold; color: #fff; text-transform: none; padding-top: 1.8rem; padding-bottom: 1.8rem; padding: 1.8rem 0 1.8rem 2rem; display: block; }
   .header nav > ul li a:hover { color: #fff; text-decoration: underline; }
-  .header nav > ul li:hover { border-bottom: 1px solid #49505a; }
+  .header nav > ul li.active, .header nav > ul li:hover { border-bottom: 1px solid #49505a; }
+  .header nav > ul li.active a, .header nav > ul li.active span { text-decoration: underline; }
+  .header nav > ul li.active a:hover, .header nav > ul li.active span:hover { color: #ef4129; }
   .header nav .tel { font-size: 16px; font-size: 1.6rem; color: #fff; display: block; font-weight: bold; padding-left: 2rem; padding-top: 1.5rem; }
   .header nav .tel a { color: #fff; line-height: 2; }
-  .login { padding-top: 2rem; } }
+  .login { padding-top: 18px; } }
 
 @media (max-width: 450px) { .social { -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .social a { margin-top: 2rem; margin-bottom: 2rem; }
@@ -806,6 +809,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .page main { width: 100%; }
   .page main .head h1 { font-size: 26px; font-size: 2.6rem; }
   .page aside { display: none; } }
+
+@media (max-width: 630px) { .main { padding-top: 0; } }
 
 @media (max-width: 575px) { .social .modal-email { width: 95%; margin-left: 0; left: 2.5%; }
   .article_list_cell h3 { font-size: 18px; font-size: 1.8rem; } }

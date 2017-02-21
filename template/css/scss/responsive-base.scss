@@ -185,6 +185,9 @@
 	}
 
 	.header{
+		.container{
+			height: 70px;
+		}
 		nav{
 			@include transition-param(transform);
 		}
@@ -252,9 +255,20 @@
 							text-decoration: underline;
 						}
 					}
+					&.active,
 					&:hover{
 						border-bottom: 1px solid #49505a;
 					}
+
+					&.active{
+						a, span{
+							text-decoration: underline;
+							&:hover{
+								color : $color3;
+							}
+						}
+					}
+
 				}
 			}
 
@@ -273,12 +287,10 @@
 		}
 	}
 
+
+
 	.login{
-		padding-top: 2rem;
-	}
-
-	.header{
-
+		padding-top: 18px;
 	}
 }
 
