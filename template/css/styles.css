@@ -533,9 +533,11 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 /* =/building-list
 ---------------------------*/
-.article_list { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; flex-wrap: wrap; text-align: center; }
+.article_list { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; text-align: center; }
 
-.article_list_cell { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-border-radius: 5px; border-radius: 5px; -webkit-transition: border-color 0.2s ease-out; transition: border-color 0.2s ease-out; background-color: #f8f8f6; border: 3px solid #fff; margin: 2rem 0; padding-bottom: 2rem; width: 360px; }
+.article_list_cell { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-border-radius: 5px; border-radius: 5px; -webkit-transition: border-color 0.2s ease-out; transition: border-color 0.2s ease-out; background-color: #f8f8f6; border: 3px solid #fff; margin: 2rem 3rem 2rem 0; padding-bottom: 2rem; width: 360px; }
+
+.article_list_cell:nth-child(3n) { margin-right: 0; }
 
 .article_list_cell:hover { border-color: #30445d; }
 
@@ -757,6 +759,9 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 @media (max-width: 1280px) and (max-height: 800px) { .project-list .fp-tableCell, .building-list .fp-tableCell { padding-bottom: 5rem; }
   .about { background: url(../images/bg-2.png) no-repeat center -100px, url(../images/bg-2-f.png) no-repeat center bottom -100px; } }
 
+@media (max-width: 1249px) { .article_list_cell { width: calc(33.3% - 3rem); }
+  .article_list_cell h3 { font-size: 20px; font-size: 2rem; } }
+
 @media (max-width: 1100px) { .project-list .fp-tableCell, .building-list .fp-tableCell { padding-bottom: 5rem; }
   .about { background: url(../images/bg-2.png) no-repeat center -100px, url(../images/bg-2-f.png) no-repeat center bottom -100px; }
   .intro { padding-top: 15rem; padding-bottom: 10rem; }
@@ -772,7 +777,12 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   #section5 { padding-bottom: 0; }
   .project-list.showbg, .building-list.showbg { background-position: -500% top, left 500% top; } }
 
-@media (max-width: 991px) { .intro { padding-top: 8rem; } }
+@media (max-width: 991px) { .intro { padding-top: 8rem; }
+  .main { padding-top: 2rem; }
+  .article_list_cell { width: calc(50% - 3rem); }
+  .article_list_cell h3 { font-size: 20px; font-size: 2rem; }
+  .article_list_cell:nth-child(3n) { margin-right: 3rem; }
+  .article_list_cell:nth-child(even) { margin-right: 0; } }
 
 @media (max-width: 900px) { .services .text { padding-bottom: 3rem; } }
 
@@ -787,10 +797,12 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .building-list .flexbox .cell a, .project-list .flexbox .cell a { margin-left: auto; margin-right: auto; }
   .building-list figure.effect-bubba h4, .project-list figure.effect-bubba h4 { padding-top: 24%; } }
 
-@media (max-width: 575px) { .social .modal-email { width: 95%; margin-left: 0; left: 2.5%; } }
+@media (max-width: 575px) { .social .modal-email { width: 95%; margin-left: 0; left: 2.5%; }
+  .article_list_cell h3 { font-size: 18px; font-size: 1.8rem; } }
 
 @media (max-width: 560px) { .services a:after, .services a:before { display: none !important; }
-  .services ul li { padding-right: 0 !important; padding-left: 0 !important; width: 100% !important; text-align: center !important; } }
+  .services ul li { padding-right: 0 !important; padding-left: 0 !important; width: 100% !important; text-align: center !important; }
+  .article_list_cell { width: 360px; margin-left: auto; margin-right: auto !important; } }
 
 @media (max-width: 470px) { .building-list .flexbox .cell, .project-list .flexbox .cell { height: 230px; }
   .building-list figure, .project-list figure { max-height: 230px; }

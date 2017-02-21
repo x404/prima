@@ -1,6 +1,6 @@
 .article_list{
 	@include flexbox;
-	@include justify-content(space-between);
+	// @include justify-content(space-between);
 	flex-wrap: wrap;
 	text-align: center;
 	&_cell{
@@ -9,9 +9,12 @@
 		@include transition-param(border-color);
 		background-color: $color5;
 		border: 3px solid $color2;
-		margin: 2rem 0;
+		margin: 2rem 3rem 2rem 0;
 		padding-bottom: 2rem;
 		width: 360px;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
 		&:hover{
 			border-color: $color4;
 			h3{
