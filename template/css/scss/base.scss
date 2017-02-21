@@ -58,7 +58,9 @@ html, body{
 
 
 
-// *:focus{outline:none}
+.navbar-toggle{
+	display: none;
+}
 
 input::-moz-focus-inner{
 	border: 0;
@@ -214,6 +216,10 @@ header.fixed{
 		@include flexbox;
 	}
 
+	.close-menu{
+		display: none;
+	}
+
 	nav{
 		@include font-size(1.4);
 		@include transition;
@@ -222,11 +228,16 @@ header.fixed{
 		margin-right: 15.3rem;
 		text-transform: uppercase;
 		padding-top: 4.6rem;
+		.tel{
+			display: none;
+		}
+
 		& > ul{
 			@include flexbox;
 			@include justify-content(space-between);
 			position: relative;
 			& > li{
+				border-bottom: 2px solid $color2;
 				&.active{
 					border-bottom: 2px solid $color3;
 					a{
@@ -244,6 +255,7 @@ header.fixed{
 					}
 				}
 			}
+
 			// ul{
 			// 	transition: opacity .3s;
 			// 	opacity: 0;

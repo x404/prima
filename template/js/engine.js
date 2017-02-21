@@ -226,6 +226,34 @@ $(document).ready(function(){
 
 
 
+	// mobile-menu
+	$('#navbar').each(function(){
+		var $this = $(this),
+			$link = $('.navbar-toggle'),
+			$close = $('.header .close-menu'),
+
+			init = function(){
+				$link.on('click', openMenu);
+				$close.on('click', closeMenu);
+			},
+			openMenu = function(e){
+				e.preventDefault();
+				// h = $(document).height()-50;
+				$('body').addClass('o-menu');
+				// $('.mobile-menu').height(h);
+
+			},
+			closeMenu = function(e){
+				e.preventDefault();
+				$('body').removeClass('o-menu');
+			};
+		init();
+	});	
+
+
+	// $('.mobile-menu').hammer().on('panleft', function(){
+		// $('body').removeClass('o-menu');
+	// });
 
 
 	// validation
