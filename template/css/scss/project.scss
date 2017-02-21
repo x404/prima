@@ -11,10 +11,30 @@
 		flex: auto; 
 		margin: 2px; 
 		width: 200px; 
+		position: relative;
+		overflow: hidden;
 		img{
 			height: 100%; 
 			vertical-align: top;
 			width: 100%; 
+			@include transition-param(transform);
+		}
+		&:before{
+			@extend .before;
+			@include transition;
+			height: 100%;
+			left: 0;
+			top: 0;
+			width: 100%;
+			z-index: 10;
+		}
+		&:hover{
+			img{
+				transform: scale(1.1);
+			}
+			&:before{
+				background-color: rgba(48, 68, 93, .25);
+			}
 		}
 	}
 }
