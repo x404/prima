@@ -657,7 +657,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .category-list .cell figure { border: 1px solid #fff; overflow: hidden; background-color: transparent; cursor: pointer; display: block; max-height: 230px; min-width: 0; overflow: hidden; position: relative; text-align: center; width: 100%; }
 
-.category-list .cell figure img { width: 100%; }
+.category-list .cell figure img { display: block; width: 100%; }
 
 .category-list .cell figure:before { background-color: rgba(48, 68, 93, 0.5); height: 100%; left: 0; top: 0; width: 100%; z-index: 5; }
 
@@ -766,7 +766,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .about { background: url(../images/bg-2.png) no-repeat center -100px, url(../images/bg-2-f.png) no-repeat center bottom -100px; } }
 
 @media (max-width: 1249px) { .article_list_cell { width: calc(33.3% - 3rem); }
-  .article_list_cell h3 { font-size: 20px; font-size: 2rem; } }
+  .article_list_cell h3 { font-size: 20px; font-size: 2rem; }
+  .category-list .cell { width: calc(33.3% - 2.8rem); } }
 
 @media (max-width: 1150px) { .page main { width: 65%; }
   .page main img { max-width: 100%; } }
@@ -794,7 +795,10 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .article_list_cell:nth-child(even) { margin-right: 0; }
   .contacts_info { flex-wrap: wrap; }
   .contacts_info .cell { width: 50%; text-align: center; }
-  .contacts_info_field { display: block; } }
+  .contacts_info_field { display: block; }
+  .category-list .cell { width: calc(50% - 2.8rem); }
+  .category-list .cell:nth-child(3n) { margin-right: 2.8rem; }
+  .category-list .cell:nth-child(even) { margin-right: 0; } }
 
 @media (max-width: 900px) { .services .text { padding-bottom: 3rem; } }
 
@@ -823,7 +827,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 @media (max-width: 560px) { .services a:after, .services a:before { display: none !important; }
   .services ul li { padding-right: 0 !important; padding-left: 0 !important; width: 100% !important; text-align: center !important; }
-  .article_list_cell { width: 360px; margin-left: auto; margin-right: auto !important; } }
+  .article_list_cell { width: 360px; margin-left: auto; margin-right: auto !important; }
+  .category-list .cell { width: 360px; margin-right: auto !important; margin-left: auto; } }
 
 @media (max-width: 500px) { .contacts_info .cell { margin-bottom: 2rem; width: 100%; }
   .contacts_info_title { margin-top: 1rem; }
@@ -835,7 +840,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .building-list figure, .project-list figure { max-height: 230px; }
   .contacts p { padding-left: 1.5rem; padding-right: 1.5rem; }
   .page .head h1 { font-size: 23rempx; font-size: 2.3remrem; }
-  .page main { text-align: justify; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; } }
+  .category main, .page main { text-align: justify; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; } }
 
 @media (max-width: 400px) { .building-list figure.effect-bubba h4, .project-list figure.effect-bubba h4 { padding-top: 30%; } }
 
