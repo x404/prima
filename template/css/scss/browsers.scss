@@ -2,6 +2,40 @@
         display: none;
 }
 
+/* Safari 10.0+ */
+_::-webkit-:host:not(:root:root), .intro{
+		background: url(../images/bg-1.jpg) no-repeat center center / cover;
+		.bg1,
+		.bg2,
+		.bg3,
+		.bg4{
+			background: none !important;
+		}
+}
 
-.no-flexboxlegacy {
+
+_::-webkit-:host:not(:root:root), .intro .container{
+	height: 800px;
+	display: block;
+
+}
+
+_::-webkit-:host:not(:root:root), .intro .text{
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+_::-webkit-:host:not(:root:root), .project-list{
+	.container{
+		padding-bottom: 5rem;
+	}
+}
+
+
+_::-webkit-:host:not(:root:root), .building-list{
+	.container{
+		padding-bottom: 5rem;
+	}
 }

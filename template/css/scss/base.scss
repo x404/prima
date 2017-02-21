@@ -322,11 +322,6 @@ header.fixed{
 }
 
 
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-
 
 #map{
 	height: 370px;
@@ -491,6 +486,38 @@ button.close{
 /* =/social
 ---------------------------*/
 
+
+.lightbox{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	img{
+		@include transition-param(transform);
+		height: 100%; 
+		vertical-align: top;
+		width: 100%; 
+	}
+	&:after{
+		@extend .before;
+		@include transition;
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+		background: url(../images/zoom.png) no-repeat center center;
+		opacity: 0;
+	}
+	&:hover{
+		img{
+			transform: scale(1.1);
+		}
+		&:after{
+			background-color: rgba(48, 68, 93, .25);
+			opacity: 1;
+		}
+	}
+}
 
 /* =footer
 ---------------------------*/

@@ -38,7 +38,9 @@
 
 	.container{
 		@include flexbox;
+		@include align-items(center);
 		height: 100%;
+
 	}
 	.text{
 		@include flexbox;
@@ -48,7 +50,7 @@
 		background: rgba(48, 68, 93, 0.48);
 		flex-direction: column;
 		line-height: 1.3;
-		margin: auto;
+		// margin: auto;
 		padding: 7.5rem 3rem 7rem;
 		position: relative;
 		text-align: center;

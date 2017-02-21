@@ -1,0 +1,8 @@
+::-ms-clear {
+  display: none;
+}
+
+/* Safari 10.0+ */
+_::-webkit-:host:not(:root:root), .intro .container {
+  min-height: 800px;
+}
