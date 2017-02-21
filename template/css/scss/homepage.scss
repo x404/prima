@@ -39,6 +39,7 @@
 	.container{
 		@include flexbox;
 		@include align-items(center);
+		@include justify-content(center);
 		height: 100%;
 
 	}
@@ -56,6 +57,9 @@
 		text-align: center;
 		top: 40px;
 		width: 787px;
+		p{
+			width: 100%;
+		}
 	}
 	.buttons{
 		padding-top: 4.8rem;
@@ -78,10 +82,10 @@
 	}
 
 	.mouse{
-		position: absolute;
+		bottom: 28px;
 		left: 50%;
 		margin-left: -10px;
-		bottom: 28px;
+		position: absolute;
 	}
 }
 

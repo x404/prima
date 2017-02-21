@@ -48,3 +48,26 @@ _::-webkit-:host:not(:root:root), .building-list{
 		height: auto;
 	}
 }
+
+
+
+.ie10 .article_list_cell h3{
+	display: block;
+}
+
+.ie10 .page .flexbox main{
+	float: left;
+}
+.ie10 .page .flexbox aside{
+	float: right;
+}
+
+.ie10 .page .flexbox aside ul li a .desc{
+	display: block;
+	width: 70%;
+}
+
+.ie10 .gallery a{
+	float: left;
+	display: block;
+}

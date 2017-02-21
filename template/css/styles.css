@@ -367,9 +367,11 @@ footer a { color: #30445d; }
 
 .intro .bg4 { background: url(../images/bushes.png) no-repeat center 150px; }
 
-.intro .container { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; height: 100%; }
+.intro .container { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; height: 100%; }
 
 .intro .text { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; font-size: 24px; font-size: 2.4rem; -webkit-border-radius: 1.5rem; border-radius: 1.5rem; background: rgba(48, 68, 93, 0.48); flex-direction: column; line-height: 1.3; padding: 7.5rem 3rem 7rem; position: relative; text-align: center; top: 40px; width: 787px; }
+
+.intro .text p { width: 100%; }
 
 .intro .buttons { padding-top: 4.8rem; }
 
@@ -377,7 +379,7 @@ footer a { color: #30445d; }
 
 .intro .buttons .btn:hover { background: none; color: #fff; }
 
-.intro .mouse { position: absolute; left: 50%; margin-left: -10px; bottom: 28px; }
+.intro .mouse { bottom: 28px; left: 50%; margin-left: -10px; position: absolute; }
 
 /* =about
 ---------------------------*/
@@ -555,7 +557,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .article_list_cell:hover .pic img { transform: scale(1.1); }
 
-.article_list_cell a { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; text-decoration: none; }
+.article_list_cell a { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; text-decoration: none; width: 100%; }
 
 .article_list_cell .pic { overflow: hidden; }
 
@@ -565,7 +567,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .article_list_cell hr { width: 64px; background-color: #ef4129; height: 2px; border: none; margin-top: 2rem; }
 
-.article_list_cell h3 { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; flex: 1; min-height: 10rem; }
+.article_list_cell h3 { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; flex: 1; min-height: 10rem; width: 100%; }
 
 .date_pub { font-size: 14px; font-size: 1.4rem; color: #acacab; margin-top: 1.5rem; position: relative; padding-left: 28px; }
 
@@ -712,6 +714,16 @@ _::-webkit-:host:not(:root:root) .container, .building-list .container { padding
 
 @media (max-width: 600px) { _::-webkit-:host:not(:root:root), .intro .text { margin-top: 20px; }
   _::-webkit-:host:not(:root:root), .intro .container { height: auto; } }
+
+.ie10 .article_list_cell h3 { display: block; }
+
+.ie10 .page .flexbox main { float: left; }
+
+.ie10 .page .flexbox aside { float: right; }
+
+.ie10 .page .flexbox aside ul li a .desc { display: block; width: 70%; }
+
+.ie10 .gallery a { float: left; display: block; }
 
 @media (min-height: 1000px) { .contacts #map { margin-top: 5rem; height: 420px; }
   .social { padding-top: 7rem; } }
