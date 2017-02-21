@@ -285,22 +285,24 @@
 				}
 			}
 		}
+
+		&.fixed .login,
+		.login{
+			padding-top: 18px;
+		}
 	}
 
 
-
-	.login{
-		padding-top: 18px;
-	}
 }
 
 @media (max-width: 450px){
 	.social{
-		@include flex-direction(column);
-
+		display: block;
+		min-height: inherit;
+		padding-top: 2rem;
+		text-align: center;
 		a{
-			margin-top: 2rem;
-			margin-bottom: 2rem;
+			margin: 3rem auto !important;
 		}
 	}
 
@@ -311,6 +313,19 @@
 
 	.social .modal-email{
 		bottom: 26.5rem;
+	}
+
+	footer{
+		margin-top: 1rem;
+		padding-bottom: 2rem;
+		.container{
+			padding-top: 2rem;
+		}
+		.kuzma,
+		.proverstka{
+			display: block;
+			padding: .2rem 0;
+		}
 	}
 }
 

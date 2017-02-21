@@ -147,6 +147,18 @@
 		}
 	}
 
+	// contacts
+	.contacts_info{
+		flex-wrap: wrap;
+		.cell{
+			width: 50%;
+			text-align: center;
+		}
+		&_field{
+			display: block;
+		}
+	}
+
 }
 
 @media (max-width: 900px){
@@ -276,6 +288,30 @@
 			width: 360px;
 			margin-left: auto;
 			margin-right: auto !important;
+		}
+	}
+}
+
+
+@media (max-width: 500px){
+	.contacts_info{
+		.cell{
+			margin-bottom: 2rem;
+			width: 100%;
+		}
+		&_title{
+			margin-top: 1rem;
+		}
+	}
+
+	.feedback{
+		margin-top: 4rem;
+	}
+
+	.feedback form .row{
+		display: block;
+		.form-control{
+			width: 100%;
 		}
 	}
 }
