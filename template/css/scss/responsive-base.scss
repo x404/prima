@@ -76,7 +76,6 @@
 }
 
 @media (max-width: 1100px){
-
 	.fp-section,
 	.fp-tableCell{
 		height: auto !important;
@@ -156,6 +155,7 @@
 			nav{
 				display: block;
 				transform: translate(0, 0);
+				z-index: 9999;
 			}
 		}
 	}
@@ -188,13 +188,11 @@
 		.container{
 			height: 70px;
 		}
-		nav{
-			@include transition-param(transform);
-		}
 		height: 70px !important;
 		padding-top: .8rem;
+
 		.logo{
-			padding-left: 70px;
+			padding-left: 40%;
 			img{
 				width: 105px !important;
 			}
@@ -204,6 +202,7 @@
 			display: block;
 			@include transition;
 			transform: translate(-320px, 0);	
+			
 			background: none;
 			cursor: pointer;
 			padding: 0;
@@ -227,7 +226,7 @@
 			}
 		}
 		nav{
-			transform: translate(-320px, 0);
+			@include transition; 
 			background-color: $color4;
 			left: 0;
 			margin: 0;
@@ -235,9 +234,9 @@
 			padding-top: 14px;
 			position: absolute;
 			top: 0;
+			transform: translate(-320px, 0);
 			width: 23rem;
-			z-index: 100;
-			@include transition; 
+			
 			& > ul{
 				display: block;
 				li{
@@ -291,8 +290,6 @@
 			padding-top: 18px;
 		}
 	}
-
-
 }
 
 @media (max-width: 450px){
@@ -304,15 +301,9 @@
 		a{
 			margin: 3rem auto !important;
 		}
-	}
-
-	.intro .buttons .btn{
-		min-width: 0;
-		margin: 0;
-	}
-
-	.social .modal-email{
-		bottom: 26.5rem;
+		.modal-email{
+			bottom: 26.5rem;
+		}
 	}
 
 	footer{
@@ -334,23 +325,15 @@
 	.title{
 		@include font-size(3);		
 	}
+}
 
-	.about .text{
-		text-align: justify;
-		-moz-hyphens: auto;
-		-webkit-hyphens: auto;
-		-ms-hyphens: auto;
-		hyphens: auto;
+@media (max-width: 320px){
+	.header{
+		.logo{
+			padding-left: 95px;
+		}
 	}
-	
-	.intro{
-		.text{
-			@include font-size(2);
-		}
-
-		.buttons .btn{
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
+	#section6 footer{
+		padding-bottom: 0;
 	}
 }

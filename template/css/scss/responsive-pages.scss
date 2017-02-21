@@ -269,6 +269,13 @@
 	}
 }
 
+@media (max-width: 600px){
+	.article_list_cell h3{
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+}
+
 @media (max-width: 575px){
 	.social .modal-email{
 		width: 95%;
@@ -381,11 +388,38 @@
 	}
 }
 
+@media (max-width: 450px){
+	.intro .buttons .btn{
+		min-width: 0;
+		margin: 0;
+	}
+}
+
+
 @media (max-width: 400px){
 	.building-list,
 	.project-list{
 		figure.effect-bubba h4{
 			padding-top: 30%;
+		}
+	}
+
+	.about .text{
+		text-align: justify;
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+	
+	.intro{
+		.text{
+			@include font-size(2);
+		}
+
+		.buttons .btn{
+			padding-left: 1rem;
+			padding-right: 1rem;
 		}
 	}
 }
@@ -435,6 +469,10 @@
 }
 
 @media (max-width: 320px){
+	.services ul li{
+		min-height: 5rem;
+	}
+
 	// article
 	.page main{
 		.head{

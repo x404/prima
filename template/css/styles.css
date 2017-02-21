@@ -679,7 +679,7 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .gallery { margin-top: 4rem; margin-bottom: 4rem; display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -ms-flex-direction: column; -webkit-flex-wrap: nowrap; -moz-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; -webkit-flex-flow: row wrap; -moz-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; }
 
-.gallery a { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; width: 200px; position: relative; overflow: hidden; }
+.gallery a { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; width: 200px; position: relative; overflow: hidden; z-index: 1; }
 
 .gallery a img { height: 100%; vertical-align: top; width: 100%; -webkit-transition: transform 0.2s ease-out; transition: transform 0.2s ease-out; }
 
@@ -730,20 +730,19 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 @media (max-width: 630px) { .fp-section.fp-table, .fp-slide.fp-table { display: block !important; position: static; }
   .o-menu .header .close-menu { display: block; transform: translate(0, 0); }
-  .o-menu .header nav { display: block; transform: translate(0, 0); }
+  .o-menu .header nav { display: block; transform: translate(0, 0); z-index: 9999; }
   .navbar-toggle { background-color: #30445d; border: none; cursor: pointer; display: block; height: 70px; left: 0; position: absolute; text-align: center; top: 0; width: 70px; -webkit-transition: background-color 0.2s ease-out; transition: background-color 0.2s ease-out; }
   .navbar-toggle .icon-bar { display: block; height: 2px; width: 30px; background-color: #fff; margin: 8px auto; }
   .navbar-toggle:hover { background-color: #ef4129; }
   .header { height: 70px !important; padding-top: .8rem; }
   .header .container { height: 70px; }
-  .header nav { -webkit-transition: transform 0.2s ease-out; transition: transform 0.2s ease-out; }
-  .header .logo { padding-left: 70px; }
+  .header .logo { padding-left: 40%; }
   .header .logo img { width: 105px !important; }
   .header .close-menu { display: block; -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; transform: translate(-320px, 0); background: none; cursor: pointer; padding: 0; left: 23rem; top: 20px; background-color: #30445d; border: none; height: 70px; position: absolute; text-align: center; top: 0; width: 70px; }
   .header .close-menu img { -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
   .header .close-menu:hover { background-color: #ef4129; }
   .header .close-menu:hover img { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
-  .header nav { transform: translate(-320px, 0); background-color: #30445d; left: 0; margin: 0; min-height: 100%; padding-top: 14px; position: absolute; top: 0; width: 23rem; z-index: 100; -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
+  .header nav { -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; background-color: #30445d; left: 0; margin: 0; min-height: 100%; padding-top: 14px; position: absolute; top: 0; transform: translate(-320px, 0); width: 23rem; }
   .header nav > ul { display: block; }
   .header nav > ul li { border-bottom: 1px solid #49505a; }
   .header nav > ul li a { font-weight: bold; color: #fff; text-transform: none; padding-top: 1.8rem; padding-bottom: 1.8rem; padding: 1.8rem 0 1.8rem 2rem; display: block; }
@@ -757,16 +756,15 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 @media (max-width: 450px) { .social { display: block; min-height: inherit; padding-top: 2rem; text-align: center; }
   .social a { margin: 3rem auto !important; }
-  .intro .buttons .btn { min-width: 0; margin: 0; }
   .social .modal-email { bottom: 26.5rem; }
   footer { margin-top: 1rem; padding-bottom: 2rem; }
   footer .container { padding-top: 2rem; }
   footer .kuzma, footer .proverstka { display: block; padding: .2rem 0; } }
 
-@media (max-width: 400px) { .title { font-size: 30px; font-size: 3rem; }
-  .about .text { text-align: justify; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-  .intro .text { font-size: 20px; font-size: 2rem; }
-  .intro .buttons .btn { padding-left: 1rem; padding-right: 1rem; } }
+@media (max-width: 400px) { .title { font-size: 30px; font-size: 3rem; } }
+
+@media (max-width: 320px) { .header .logo { padding-left: 95px; }
+  #section6 footer { padding-bottom: 0; } }
 
 @media (max-width: 1280px) and (max-height: 800px) { .project-list .fp-tableCell, .building-list .fp-tableCell { padding-bottom: 5rem; }
   .about { background: url(../images/bg-2.png) no-repeat center -100px, url(../images/bg-2-f.png) no-repeat center bottom -100px; } }
@@ -828,6 +826,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 @media (max-width: 630px) { .main { padding-top: 0; } }
 
+@media (max-width: 600px) { .article_list_cell h3 { padding-left: .5rem; padding-right: .5rem; } }
+
 @media (max-width: 575px) { .social .modal-email { width: 95%; margin-left: 0; left: 2.5%; }
   .article_list_cell h3 { font-size: 18px; font-size: 1.8rem; } }
 
@@ -848,7 +848,12 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
   .page .head h1 { font-size: 23rempx; font-size: 2.3remrem; }
   .category main, .page main { text-align: justify; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; } }
 
-@media (max-width: 400px) { .building-list figure.effect-bubba h4, .project-list figure.effect-bubba h4 { padding-top: 30%; } }
+@media (max-width: 450px) { .intro .buttons .btn { min-width: 0; margin: 0; } }
+
+@media (max-width: 400px) { .building-list figure.effect-bubba h4, .project-list figure.effect-bubba h4 { padding-top: 30%; }
+  .about .text { text-align: justify; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+  .intro .text { font-size: 20px; font-size: 2rem; }
+  .intro .buttons .btn { padding-left: 1rem; padding-right: 1rem; } }
 
 @media (max-width: 360px) { .building-list figure, .project-list figure { min-width: 0; }
   .building-list figure figcaption, .project-list figure figcaption { padding-left: 1rem; padding-right: 1rem; }
@@ -859,4 +864,5 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 @media (max-width: 350px) { .intro .container { padding-left: 0; padding-right: 0; } }
 
-@media (max-width: 320px) { .page main .head h1 { font-size: 20px; font-size: 2rem; } }
+@media (max-width: 320px) { .services ul li { min-height: 5rem; }
+  .page main .head h1 { font-size: 20px; font-size: 2rem; } }
