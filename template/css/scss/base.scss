@@ -54,6 +54,13 @@ html, body{
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
+	.article_list .article_list_cell h3{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		width: 100%;
+		// padding-top: 1rem;
+	}
 }
 
 .navbar-toggle{
@@ -845,9 +852,10 @@ button.close {
 				top: 8px;
 				width: 6px;
 			}
-			&.active{
+			&.active,
+			&.B_lastCrumb{
 				&:after{
-					display: none;
+					display: none !important;
 				}
 			}
 			a{
@@ -873,7 +881,7 @@ button.close {
 			margin-right: .3rem;
 			&.prev,
 			&.next{
-				a{
+				a, span{
 					position: relative;
 					text-indent: -9999em;
 					&:before{
@@ -888,7 +896,7 @@ button.close {
 
 			&.prev{
 				margin-right: 1.2rem;
-				a{
+				a, span{
 					&:before{
 						left: 15px;
 					}
@@ -896,14 +904,21 @@ button.close {
 			}
 			&.next{
 				margin-left: 1.5rem;
-				a{
+				a, span{
 					&:before{
 						@include rotation(180deg);
 						left: 18px;
 					}
 				}
 			}
-			a{
+			&.disabled{
+				span{
+					&:hover{
+						border-color: #ccc;
+					}
+				}
+			}
+			a, span{
 				@include rounded(50%);
 				@include transition;
 				border: 2px solid $color2;
