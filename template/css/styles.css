@@ -688,6 +688,8 @@ figure.effect-bubba:hover h4, figure.effect-bubba:hover p { opacity: 1; -webkit-
 
 .category-list .cell figure figcaption p { font-size: 16px; font-size: 1.6rem; }
 
+.category .project-list { background: none; padding: 2rem 0 6rem; }
+
 .gallery { margin-top: 4rem; margin-bottom: 4rem; display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -ms-flex-direction: column; -webkit-flex-flow: row wrap; -moz-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; }
 
 .gallery a { -webkit-box-flex: auto; -ms-flex: auto; flex: auto; margin: 2px; overflow: hidden; position: relative; width: 200px; z-index: 1; }
