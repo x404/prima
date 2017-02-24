@@ -233,7 +233,7 @@ header.fixed{
 		text-transform: uppercase;
 		padding-top: 4.6rem;
 		.tel{
-			display: none;
+			display: none; 
 		}
 
 		& > ul{
@@ -244,8 +244,11 @@ header.fixed{
 				border-bottom: 2px solid $color2;
 				&.active{
 					border-bottom: 2px solid $color3;
-					a{
+					a, span{
 						color: $color3;
+					}
+					span{
+						cursor: default;
 					}
 				}
 				&:hover{

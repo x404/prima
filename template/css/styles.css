@@ -129,7 +129,9 @@ header.fixed .login { padding-top: 3rem; }
 
 .header nav > ul > li.active { border-bottom: 2px solid #ef4129; }
 
-.header nav > ul > li.active a { color: #ef4129; }
+.header nav > ul > li.active a, .header nav > ul > li.active span { color: #ef4129; }
+
+.header nav > ul > li.active span { cursor: default; }
 
 .header nav > ul > li:hover { border-bottom: 2px solid #ef4129; }
 
