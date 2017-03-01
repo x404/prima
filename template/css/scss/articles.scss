@@ -105,8 +105,8 @@
 		}
 		.pic{
 			img{
+				@include rounded(5px 5px 0 0);
 				@extend .img-responsive;
-				@include rounded(5px 5px 0 0)
 				vertical-align: top;
 			}
 		}
@@ -124,7 +124,7 @@
 				margin: 1.5rem 0;
 				&:before{
 					@extend .before;
-					@include rounded(50%)
+					@include rounded(50%);
 					height: 5px;
 					width: 5px;
 					background-color: $color3;

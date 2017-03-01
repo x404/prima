@@ -826,9 +826,23 @@ button.close {
 }
 
 
-// 
+// main
 .main{
 	padding-top: 140px;
+	.sitemap{
+		margin-top: 8rem;
+		li{
+			margin: .5rem 0;
+		}
+		ul{
+			list-style: disc;
+			margin-left: 3.5rem;
+			margin-top: .5rem;
+		}
+		a{
+			@extend .tdu;
+		}
+	}
 }
 
 
@@ -856,7 +870,8 @@ button.close {
 				width: 6px;
 			}
 			&.active,
-			&.B_lastCrumb{
+			&.B_lastCrumb,
+			&.B_currentCrumb{
 				&:after{
 					display: none !important;
 				}
