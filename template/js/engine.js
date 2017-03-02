@@ -266,18 +266,18 @@ $(document).ready(function(){
 	});
 
 
-	// validation
+	// validation quick form
 	$('#quickemail-form .submit').click(function(){
 		$('#quickemail-form').submit();
 		return false;
 	});
 
 	errorTxt = 'Ошибка отправки';
-	thankTxt = '<div class="thank"> Ваше сообщение успешно отправлено </div>';
+	thankTxt = '<div class="thank">Ваше сообщение успешно отправлено</div>';
 	$('#quickemail-form').validate({
 		submitHandler: function(form){
 			strSubmit=$(form).serialize();
-			$.ajax({type: 'POST',url: '/ajax/callback.ajax.php',data: strSubmit,
+			$.ajax({type: 'POST',url: $('#quickemail-form').attr('action') ,data: strSubmit,
 				success: function(){
 					$('.modal-email').append(thankTxt);
 					$('.modal-email').find('.modal-title, form').hide();
@@ -291,20 +291,18 @@ $(document).ready(function(){
 
 
 
-	// validation
+	// validation form in page Contact
 	$('#feedback-form .submit').click(function(){
 		$('#feedback-form').submit();
 		return false;
 	});
 
-	errorTxt = 'Ошибка отправки';
-	thankTxt = '<div class="thank"> Ваше сообщение успешно отправлено </div>';
 	$('#feedback-form').validate({
 		submitHandler: function(form){
 			strSubmit=$(form).serialize();
-			$.ajax({type: 'POST',url: '/ajax/callback.ajax.php',data: strSubmit,
+			$.ajax({type: 'POST',url: $('#feedback-form').attr('action'),data: strSubmit,
 				success: function(){
-					$('.feedback').append(thankTxt);
+					$('.feedback').append('<div class="thank"><b>Ваше сообщение успешно отправлено</b></div>');
 					startClock('feedback-form');
 				}
 			}).fail(function(error){
@@ -312,9 +310,6 @@ $(document).ready(function(){
 			});
 		}
 	});	
-
-
-
 });
 
 
@@ -357,13 +352,14 @@ function showTime(form){
 				$('.thank').remove();
 				$('.modal-email').removeClass('show');
 				$('.social .email').removeClass('active');
+				$('#quickemail-form .form-control').val('');
 			})
 		}
 
 		if (form == 'feedback-form'){ 
 			$('.thank').fadeOut('normal', function(){
-				$('.thank').remove();
 				$('#feedback-form .form-control').val('');
+				$('.thank').remove();
 			})
 		}
 	}
